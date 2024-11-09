@@ -35,7 +35,7 @@ permalink: /projects/
       </ul>
     </div>
     <div class="project-media">
-      <img src="/assets/images/RC3.jpg" alt="Project Image">
+      <img src="/assets/images/RC3.jpg" alt="Image of the Lab members with Prof. Nazari">
       <!-- <a href="/assets/pdfs/project2.pdf" target="_blank" class="project-pdf">Project PDF</a> -->
     </div>
   </div>
@@ -56,7 +56,7 @@ permalink: /projects/
     <div class="project-media">
       <img src="/assets/images/estimationError.jpg" alt="Project Image">
       <img src="/assets/images/state-comparison.jpg" alt="Project Image">
-      <a href="/assets/pdfs/estimation.pdf" target="_blank" class="project-pdf">Project PDF</a>
+      <a href="/assets/pdfs/Estimation.pdf" target="_blank" class="project-pdf">Project PDF</a>
     </div>
   </div>
 
@@ -79,7 +79,7 @@ permalink: /projects/
     </div>
     <div class="project-images">
         <div class="top-right">
-            <img src="/assets/images/sensor-cad.jpg" alt="Designed sensor parts." class="large-image">
+            <img src="/assets/images/sensor-CAD.jpg" alt="Designed sensor parts." class="large-image">
             <div class="small-images-row">
                 <img src="/assets/images/tensile.jpg" alt="Tensile testing on 3D-printing resin to obtain its mechanical properties." class="small-image narrow">
                 <img src="/assets/images/disp.jpg" alt="Sensor prediction vs actual force applied on it." class="small-image wide">
@@ -133,8 +133,8 @@ permalink: /projects/
     <p><strong>Highlights:</strong> Won research grant for the hand stabilizer gloves in <a href="https://2020.isav.ir/?lang=en" target="_blank" rel="noopener noreferrer"> the 10th International Conference on Acoustics and Vibration (ISAV 2020)</a> student competition.</p>
   </div>
   <div class="project-media">
-    <img src="/assets/images/hand1.jpg" alt="The passive vibration absorber.">
-    <img src="/assets/images/hand2.jpg" alt="Simulator of hand with Parkinson tremors.">
+    <img src="/assets/images/hand1.JPG" alt="The passive vibration absorber.">
+    <img src="/assets/images/hand2.JPG" alt="Simulator of hand with Parkinson tremors.">
   </div>
 </div>
 
@@ -154,7 +154,7 @@ permalink: /projects/
   </div>
   <div class="project-media">
     <img src="/assets/images/intern1.png" alt="Macro-AFM desined in SOLIDWORKS.">
-    <a href="/assets/pdfs/internship.pdf" target="_blank" class="project-pdf">Project PDF</a>
+    <a href="/assets/pdfs/Internship.pdf" target="_blank" class="project-pdf">Project PDF</a>
   </div>
 </div>
 
