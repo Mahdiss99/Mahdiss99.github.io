@@ -31,6 +31,11 @@ permalink: /skills/
   </div>
 
   <div class="skill-category">
+    <h3>Documentation and Productivity Tools</h3>
+    <p>● Microsoft Office (Word, Excel, PowerPoint) ● LaTeX ● Git (Version Control)</p>
+  </div>
+
+  <div class="skill-category">
     <h3>Soft Skills</h3>
     <p>● Problem-Solving ● Teamwork ● Presentation ● Teaching</p>
   </div>
