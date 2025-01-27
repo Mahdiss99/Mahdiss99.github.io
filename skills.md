@@ -7,12 +7,12 @@ permalink: /skills/
 <div class="skills-section">
   <div class="skill-category">
     <h3>Programming Languages</h3>
-    <p>● Python ● C/C++ ● MATLAB ● Julia</p>
+    <p>● Python ● C/C++ ● MATLAB ● Julia ● ROS</p>
   </div>
 
   <div class="skill-category">
     <h3>Simulation and Analysis Tools</h3>
-    <p> ● ANSYS ● Simulink ● ADAMS ● COMSOL ● Altium ● Fritzing</p>
+    <p> ● AirSim (Unreal Engine) ● Simulink ● Webots ● ANSYS ● ADAMS ● COMSOL ● Altium ● Fritzing</p>
   </div>
   
   <div class="skill-category">
@@ -38,6 +38,11 @@ permalink: /skills/
   <div class="skill-category">
     <h3>Soft Skills</h3>
     <p>● Problem-Solving ● Teamwork ● Presentation ● Teaching</p>
+  </div>
+
+  <div class="skill-category">
+    <h3>Technical Expertise</h3>
+    <p>● Control and Planning ● Decision-Making ● Optimization ● Machine Learning and Deep Learning (TensorFlow) ● Embedded Systems ● Physics-Based Simulation ● Estimation and Filtering ● Game Theory ● Machining ● Computer-Aided Design (CAD) ● 3D-printing</p>
   </div>
 
 </div>

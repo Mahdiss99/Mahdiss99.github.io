@@ -30,7 +30,7 @@ permalink: /projects/
       <p><strong>Institution:</strong> <a href="https://nazarilab.ucdavis.edu/" target="_blank" rel="noopener noreferrer">CORE Lab, UC Davis</a></p>
       <p><strong>Duration:</strong> Summer 2023 – Present</p>
       <ul>
-        <li>Co-leading the CORE Lab RC car team.</li>
+        <li>Mentoring and leading the CORE Lab RC car team.</li>
         <li>Designed and tested wheel encoders using infrared sensors and Arduino.</li>
       </ul>
     </div>

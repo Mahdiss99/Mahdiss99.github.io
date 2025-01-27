@@ -14,7 +14,7 @@ layout: default
     <!-- About Me Section with Title and Initial Content -->
     <div class="about-me-content">
       <h2>About Me</h2>
-      <p>I am a Ph.D. student in the <a href="https://mae.ucdavis.edu/">MAE Department at UC Davis</a>, working in the <a href="https://nazarilab.ucdavis.edu/">CORE Lab</a> with <a href="https://scholar.google.com/citations?user=bEr1ZzMAAAAJ&hl=en">Prof. Nazari</a>. My research focuses on system identification, decision-making, and path-planning for non-cooperative multi-agent systems, with applications in autonomous vehicles and human-robot interaction. I work on both theoretical frameworks, including game theory, optimization and Koopman operator, and simulations in Python or Julia. My journey in engineering has taught me to build on foundational principles to create practical solutions.</p>
+      <p>I am a Ph.D. candidate in the <a href="https://mae.ucdavis.edu/">MAE Department at UC Davis</a>, working in the <a href="https://nazarilab.ucdavis.edu/">CORE Lab</a> with <a href="https://scholar.google.com/citations?user=bEr1ZzMAAAAJ&hl=en">Prof. Nazari</a>. My research focuses on system identification, decision-making, and path-planning for non-cooperative multi-agent systems, with applications in autonomous vehicles and human-robot interaction. I work on both theoretical frameworks, including game theory, optimization and Koopman operator, and simulations in Python or Julia. My journey in engineering has taught me to build on foundational principles to create practical solutions.</p>
     </div>
   </div>
 
@@ -30,7 +30,7 @@ layout: default
     <div class="education-grid">
       <!-- Ph.D. Education Card -->
       <div class="education-card">
-        <h3>Ph.D. Student in Mechanical Engineering (GPA: 3.83/4.00)</h3>
+        <h3>Ph.D. Candidate in Mechanical Engineering (GPA: 3.84/4.00)</h3>
         <p><strong>University of California, Davis</strong><br>California, USA</p>
         <p><span class="education-date">Sep. 2022 – Present</span></p>
         <p>My research focuses on decision-making and control of autonomous systems, using mathematical foundations and algorithms for human-robot interaction in multi-agent systems with game theory.</p>
@@ -54,6 +54,7 @@ layout: default
     <div class="honors-awards">
       <h2>Honors & Awards</h2>
       <ul>
+        <li><strong>2022</strong> – Won a 9-month fellowship from Mechanical and Aerospace Department at University of California, Davis.</li>
         <li><strong>2021</strong> – Achieved 30th place in the 26th Mechanical Engineering Olympiad for university students.</li>
         <li><strong>2021</strong> – Won research grant for the hand stabilizer gloves in the 10th International Conference on Acoustics and Vibration (ISAV 2020) student competition.</li>
         <li><strong>2015</strong> – Third place in the 7th Student National AEROSPACE Competition to design and build gliders, Amirkabir University of Technology, Tehran, Iran.</li>
