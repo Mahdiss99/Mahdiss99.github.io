@@ -4,8 +4,8 @@ title: "Technical Skills"
 permalink: /skills/
 ---
 
-<div class="skills-section">
-  <!-- <div class="skill-category">
+<!-- <div class="skills-section">
+  <div class="skill-category">
     <h3>Programming Languages</h3>
     <p>● Python ● C/C++ ● MATLAB ● Julia ● ROS</p>
   </div>
@@ -43,9 +43,10 @@ permalink: /skills/
   <div class="skill-category">
     <h3>Technical Expertise</h3>
     <p>● Control and Planning ● Decision-Making ● Optimization ● Machine Learning and Deep Learning (TensorFlow) ● Embedded Systems ● Physics-Based Simulation ● Estimation and Filtering ● Game Theory ● Machining ● Computer-Aided Design (CAD) ● 3D-printing</p>
+    </div>
   </div> -->
 
-  <section class="technical-section">
+<section class="technical-section">
   <!-- First Row: 3 Cards -->
   <div class="technical-grid">
     <div class="tech-card">
@@ -103,9 +104,4 @@ permalink: /skills/
       <p>Control and Planning, Numerical Optimization, Machine Learning and Deep Learning (TensorFlow), Physics-Based Simulation, Dynamical System Modeling, Regression (Linear/Nonlinear), Algebra, Vector Arithmetic, Estimation and Filtering, Technical Document Reading, Troubleshooting, Sensor Integration, Microcontroller Programming</p>
     </div>
   </div>
-
 </section>
-
-
-
-</div>
