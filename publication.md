@@ -14,7 +14,6 @@ permalink: /publication/
       <p><strong>Journal:</strong> IEEE Transactions on Transportation Electrification (2024)</p>
       <a href="https://ieeexplore.ieee.org/abstract/document/10654514" target="_blank" class="publication-pdf">PDF</a>
     </div>
-
     <!-- Publication 2 -->
     <div class="publication-card">
       <h2>An Automatic Tuning MPC with Application to Ecological Cruise Control</h2>
@@ -22,15 +21,13 @@ permalink: /publication/
       <p><strong>Journal:</strong> IFAC-PapersOnLine 56.3 (2023): 265-270</p>
       <a href="https://www.sciencedirect.com/science/article/pii/S2405896323023686" target="_blank" class="publication-pdf">PDF</a>
     </div>
-
     <!-- Publication 3 -->
     <div class="publication-card">
       <h2>Design and Fabrication of a Soft Magnetic Tactile Sensor</h2>
-      <p><strong>Authors:</strong> Mahdis Rabbani, Mohammad Amin Mirzaee, Mahdi Robati</p>
+      <p><strong>Authors:</strong> <strong>Mahdis Rabbani</strong>, Mohammad Amin Mirzaee, Mahdi Robati</p>
       <p><strong>Conference:</strong> 2022 10th RSI International Conference on Robotics and Mechatronics (ICRoM), IEEE (2022)</p>
       <a href="https://ieeexplore.ieee.org/abstract/document/10025333" target="_blank" class="publication-pdf">PDF</a>
     </div>
-
     <!-- Publication 4 -->
     <div class="publication-card">
       <h2>Web-based Fingerprint Door Lock System</h2>

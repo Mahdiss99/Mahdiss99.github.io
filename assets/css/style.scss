@@ -285,6 +285,76 @@
   color: #333;
 }
 
+
+// ***********
+// ***********
+
+.technical-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.technical-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.technical-grid.second-row {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  background: #fff;
+}
+
+.full-width-card {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  background: #fff;
+  margin-top: 20px;
+}
+
+.tech-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tech-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.full-width-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.full-width-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
 // *********************************************************
 /* Projects Section Styling */
 .projects-section {
