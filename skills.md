@@ -101,7 +101,7 @@ permalink: /skills/
   <div class="full-width-card">
     <div>
       <h3>Technical Expertise</h3>
-      <p>Control and Planning, Numerical Optimization, Machine Learning and Deep Learning (TensorFlow), Physics-Based Simulation, Dynamical System Modeling, Regression (Linear/Nonlinear), Algebra, Vector Arithmetic, Estimation and Filtering, Technical Document Reading, Troubleshooting, Sensor Integration, Microcontroller Programming</p>
+      <p>Control and Planning, Numerical Optimization, Model Predictive Control (MPC), Machine Learning and Deep Learning (TensorFlow), Physics-Based Simulation, Dynamical System Modeling, Regression (Linear/Nonlinear), Algebra, Vector Arithmetic, Estimation and Filtering, Technical Document Reading, Troubleshooting, Sensor Integration, Microcontroller Programming</p>
     </div>
   </div>
 </section>
