@@ -4,6 +4,27 @@ title: "Projects"
 permalink: /projects/
 ---
 <div class="projects-section">
+  <!-- Project 5 -->
+  <div class="project-card">
+    <div class="project-content">
+        <h2>Multi-Step Deep Koopman for Vehicle Control in Frenent Frame</h2>
+        <p><strong>Role:</strong> Researcher</p>
+        <p><strong>Institution:</strong>  <a href="https://nazarilab.ucdavis.edu/" target="_blank" rel="noopener noreferrer">CORE Lab, UC Davis</a></p>
+        <p><strong>Year:</strong> 2025</p>
+        <ul>
+            <li>Implemented cross-language integration by embedding Python in MATLAB/Simulink for a trajectory tracking MPC for high fidelity CarSim-modeled C-Class Hatchback vehicle.</li>
+            <li>Manuscript submitted to IROS 2025.</li>
+        </ul>
+        <p><strong>Skills:</strong> Python, MATLAB/Simulink, MPC Design, Koopman Operator, Deep learning-based system identification</p>
+    </div>
+    <div class="project-media">
+      <img src="\assets\images\Plot_MPC_comp.png" alt="Comparison between MPC performance when using Linear Time Invariant (LTI) vehicle model vs. MDK model and the reference trajectory.">
+      <video controls width="100%" class="project-video">
+        <source src="/assets/video/MDK-Net.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
   <!-- Project 1 -->
   <div class="project-card">
     <div class="project-content">
