@@ -4,16 +4,17 @@ title: "Projects"
 permalink: /projects/
 ---
 <div class="projects-section">
+<h2 class="section-title">Research (UC Davis)</h2>
   <!-- Project 5 -->
   <div class="project-card">
     <div class="project-content">
         <h2>Multi-Step Deep Koopman for Vehicle Control in Frenent Frame</h2>
         <p><strong>Role:</strong> Researcher</p>
         <p><strong>Institution:</strong>  <a href="https://nazarilab.ucdavis.edu/" target="_blank" rel="noopener noreferrer">CORE Lab, UC Davis</a></p>
-        <p><strong>Year:</strong> 2025</p>
+        <p><strong>Year:</strong> Spring 2025</p>
         <ul>
             <li>Implemented cross-language integration by embedding Python in MATLAB/Simulink for a trajectory tracking MPC for high fidelity CarSim-modeled C-Class Hatchback vehicle.</li>
-            <li>Manuscript submitted to IROS 2025.</li>
+            <li>Presented at IROS 2025.</li>
         </ul>
         <p><strong>Skills:</strong> Python, MATLAB/Simulink, MPC Design, Koopman Operator, Deep learning-based system identification</p>
     </div>
@@ -24,6 +25,42 @@ permalink: /projects/
       </video>
     </div>
   </div>
+  
+
+<div class="project-card project-card--simple" id="proj-neural-astar">
+  <h2>Path-Planning and Collision Avoidance: Neural Network Approach</h2>
+  <p><strong>Role:</strong> Student</p>
+  <p><strong>Institution:</strong> UC Davis</p>
+  <p><strong>Year:</strong> 2024</p>
+  <ul>
+    <li>Reproduced key results from Neural A* and U-Net–based path planning studies, implementing and benchmarking architectures in PyTorch.</li>
+    <li>Analyzed encoder–decoder variants (VGG-16, ResNet-50) and proposed modifications for dynamic and multi-agent navigation.</li>
+  </ul>
+  <p class="skills"><strong>Skills:</strong> PyTorch, Deep Learning, Path Planning, Neural Networks</p>
+  <p class="project-actions">
+    <a href="/assets/pdfs/neural Astar.pdf" target="_blank" rel="noopener" class="project-pdf">Project PDF</a>
+  </p>
+</div>
+
+
+
+  <!-- Project: MIMO Optimal Robust Control for Fixed-Wing UAVs -->
+  <div class="project-card">
+    <div class="project-content">
+      <h2>MIMO Optimal Robust Control for Fixed-Wing UAVs</h2>
+      <p><strong>Role:</strong> Student</p>
+      <p><strong>Institution:</strong> UC Davis</p>
+      <p><strong>Year:</strong> 2024</p>
+      <ul>
+        <li>Designed and compared <strong>PID</strong>, <strong>Youla</strong>, and <strong>H∞ robust controllers</strong> for fixed-wing UAV dynamics using MATLAB/Simulink.</li>
+        <li>Analyzed performance and robustness under model uncertainty using frequency-domain tools.</li>
+      </ul>
+      <p><strong>Skills:</strong> MATLAB/Simulink, Robust Control, MIMO Systems, UAV Dynamics</p>
+    </div>
+    <div class="project-media">
+      <img src="/assets/images/mimo.png" alt="Control performance comparison for fixed-wing UAV.">
+    </div>
+  </div>
 
   <!-- Project 1 -->
   <div class="project-card">
@@ -31,7 +68,7 @@ permalink: /projects/
       <h2>Path-Planning and Collision Avoidance of Ground Vehicles</h2>
       <p><strong>Role:</strong> Researcher</p>
       <p><strong>Institution:</strong>  <a href="https://nazarilab.ucdavis.edu/" target="_blank" rel="noopener noreferrer">CORE Lab, UC Davis</a></p>
-      <p><strong>Duration:</strong> Summer 2023 – Present</p>
+      <p><strong>Duration:</strong> Summer 2023 – Summer 2024</p>
       <ul>
         <li>Created a vehicle dynamic model in Julia.</li>
         <li>Augmented collision avoidance in optimal control problems using linear and nonlinear Model Predictive Control (MPC).</li>
@@ -42,9 +79,8 @@ permalink: /projects/
       <img src="/assets/images/OSQP_MPC.png" alt="Project Image">
     </div>
   </div>
-
   <!-- Project 2 -->
-  <div class="project-card">
+  <!-- <div class="project-card">
     <div class="project-content">
       <h2>RC Team Management</h2>
       <p><strong>Role:</strong> Researcher</p>
@@ -57,10 +93,9 @@ permalink: /projects/
     </div>
     <div class="project-media">
       <img src="/assets/images/RC3.jpg" alt="Image of the Lab members with Prof. Nazari">
-      <!-- <a href="/assets/pdfs/project2.pdf" target="_blank" class="project-pdf">Project PDF</a> -->
+      <a href="/assets/pdfs/project2.pdf" target="_blank" class="project-pdf">Project PDF</a>
     </div>
-  </div>
-
+  </div> -->
   <!-- Project 3 -->
   <div class="project-card">
     <div class="project-content">
@@ -80,6 +115,11 @@ permalink: /projects/
       <a href="/assets/pdfs/Estimation.pdf" target="_blank" class="project-pdf">Project PDF</a>
     </div>
   </div>
+</div>
+
+<h2 class="section-title">Earlier Research (University of Tehran)</h2>
+<div class="projects-section">
+
 
   <!-- Project 4 -->
   <div class="project-card custom-layout">
@@ -111,7 +151,7 @@ permalink: /projects/
             <img src="/assets/images/sensor.jpg" alt="Fabricated sensor." class="wide-image">
         </div>
         <div class="small-images-row">
-            <a href="/assets/pdfs/tactile.pdf" target="_blank" class="project-pdf">Project PDF</a>
+            <a href="https://doi.org/10.1109/ICRoM57054.2022.10025333" target="_blank" class="project-pdf">Project PDF</a>
         </div>
     </div>
 </div>
@@ -151,7 +191,7 @@ permalink: /projects/
       <!-- Add more bullet points as needed -->
     </ul>
     <p><strong>Skills:</strong> SOLIDWORKS, Design optimization</p>
-    <p><strong>Highlights:</strong> Won research grant for the hand stabilizer gloves in <a href="https://2020.isav.ir/?lang=en" target="_blank" rel="noopener noreferrer"> the 10th International Conference on Acoustics and Vibration (ISAV 2020)</a> student competition.</p>
+    <p><strong>Highlights:</strong> Won research grant for the hand stabilizer gloves in <a href="https://2020.isav.ir/?lang=en" target="_blank" rel="noopener noreferrer"> the 10th International Conference on Acoustics and Vibration (ISAV 2020)</a> student challenge.</p>
   </div>
   <div class="project-media">
     <img src="/assets/images/hand1.JPG" alt="The passive vibration absorber.">
@@ -179,5 +219,50 @@ permalink: /projects/
   </div>
 </div>
 
+
+</div>
+
+
+
+<!-- Mentorship Section -->
+<h1 class="section-title">Mentorship</h1>
+<div class="projects-section">
+
+  <!-- Mentorship 1 -->
+  <div class="project-card project-card--simple" id="proj-neural-astar">
+    <div class="project-content">
+      <h2>CORE Lab Vehicle Trajectory Prediction Team</h2>
+      <p><strong>Role:</strong> Mentor</p>
+      <p><strong>Institution:</strong> <a href="https://nazarilab.ucdavis.edu/" target="_blank" rel="noopener noreferrer">CORE Lab, UC Davis</a></p>
+      <p><strong>Duration:</strong> 2024 – Present</p>
+      <ul>
+        <li>Mentored an undergraduate team developing machine learning models for interactive vehicle behavior prediction in multi-agent environments.</li>
+        <li>Provided technical guidance on data processing, training pipelines, and model validation.</li>
+      </ul>
+      <p><strong>Skills:</strong> Machine Learning, Python, Data Modeling, Mentorship</p>
+    </div>
+    <!-- <div class="project-media">
+      <img src="/assets/images/trajectory_pred.png" alt="Vehicle trajectory prediction team visualization.">
+    </div> -->
+  </div>
+
+  <!-- Mentorship 2 -->
+  <div class="project-card">
+    <div class="project-content">
+      <h2>F1tenth Autonomous Racing Platform</h2>
+      <p><strong>Role:</strong> Mentor</p>
+      <p><strong>Institution:</strong> <a href="https://nazarilab.ucdavis.edu/" target="_blank" rel="noopener noreferrer">CORE Lab, UC Davis</a></p>
+      <p><strong>Duration:</strong> 2023 – 2024</p>
+      <ul>
+        <li>Supervised and co-developed the lab’s F1tenth autonomous racing platform, establishing repeatable calibration and validation procedures.</li>
+        <li>Guided an undergraduate team through hardware bring-up, instrumentation, and testing.</li>
+      </ul>
+      <p><strong>Skills:</strong> Embedded Systems, Instrumentation, Leadership, Autonomous Racing</p>
+    </div>
+    <div class="project-media">
+      <img src="/assets/images/RC3.jpg" alt="F1tenth platform at CORE Lab.">
+      <img src="/assets/images/RC1.jpg" alt="F1tenth platform at CORE Lab.">
+    </div>
+  </div>
 
 </div>

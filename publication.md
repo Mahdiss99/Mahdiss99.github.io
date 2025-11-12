@@ -4,9 +4,27 @@ title: "Publication"
 permalink: /publication/
 ---
 <div class="publications-section">
-<p>Below is a list of my published research. For a complete list, please visit my <a href="https://scholar.google.com/citations?user=0O-aLs8AAAAJ&hl=en" target="_blank"> Google Scholar profile</a>.</p>
+<p>Below is a list of my published research. For more details, please visit my <a href="https://scholar.google.com/citations?user=0O-aLs8AAAAJ&hl=en" target="_blank"> Google Scholar profile</a>.</p>
 
   <div class="publication-list">
+    <div class="publication-card">
+      <h2>Predictive Compensation in Finite-Horizon LQ Games under Gauss-Markov Deviations</h2>
+      <p><strong>Authors:</strong> Navid Mojahed, <strong>Mahdis Rabbani</strong>, and Shima Nazari</p>
+      <p><strong>Journal:</strong> Submitted to Automatica</p>
+      <a href="https://doi.org/10.48550/arXiv.2511.03744" target="_blank" class="publication-pdf">PDF</a>
+    </div>
+    <div class="publication-card">
+      <h2>Optimal Modified Feedback Strategies in LQ Games Under Control Imperfections</h2>
+      <p><strong>Authors:</strong> <strong>Mahdis Rabbani</strong>, Navid Mojahed, and Shima Nazari</p>
+      <p><strong>Journal:</strong> Submitted to American Control Conference (ACC) (2026)</p>
+      <a href="https://doi.org/10.48550/arXiv.2503.19200" target="_blank" class="publication-pdf">PDF</a>
+    </div>
+    <div class="publication-card">
+      <h2>Multi-Step Deep Koopman Network (MDK-Net) for Vehicle Control in Frenet Frame</h2>
+      <p><strong>Authors:</strong> Mohammad Abtahi, <strong>Mahdis Rabbani</strong>, and Armin Abdolmohammadi</p>
+      <p><strong>Journal:</strong> IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) (2025)</p>
+      <a href="https://doi.org/10.48550/arXiv.2503.03002" target="_blank" class="publication-pdf">PDF</a>
+    </div>
     <!-- Publication 1 -->
     <div class="publication-card">
       <h2>Powertrain Hybridization for Autonomous Vehicles: Fuel Efficiency Perspective in Mixed Autonomy Traffic</h2>
@@ -26,7 +44,7 @@ permalink: /publication/
       <h2>Design and Fabrication of a Soft Magnetic Tactile Sensor</h2>
       <p><strong>Authors:</strong> <strong>Mahdis Rabbani</strong>, Mohammad Amin Mirzaee, Mahdi Robati</p>
       <p><strong>Conference:</strong> 2022 10th RSI International Conference on Robotics and Mechatronics (ICRoM), IEEE (2022)</p>
-      <a href="https://ieeexplore.ieee.org/abstract/document/10025333" target="_blank" class="publication-pdf">PDF</a>
+      <a href="https://doi.org/10.1109/ICRoM57054.2022.10025333" target="_blank" class="publication-pdf">PDF</a>
     </div>
     <!-- Publication 4 -->
     <div class="publication-card">

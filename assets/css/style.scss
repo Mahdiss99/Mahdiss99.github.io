@@ -357,6 +357,46 @@
 
 // *********************************************************
 /* Projects Section Styling */
+/* Simple, single-column layout */
+#proj-neural-astar.project-card--simple {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Title full width with tidy spacing */
+#proj-neural-astar.project-card--simple > h2 {
+  margin: 0 0 .5rem 0;
+  line-height: 1.2;
+}
+
+/* Nice readable spacing for body content */
+#proj-neural-astar.project-card--simple p { margin: .4rem 0; }
+#proj-neural-astar.project-card--simple ul { margin: .5rem 0 .25rem 1.1rem; }
+
+/* Actions (PDF link) lives at the bottom */
+#proj-neural-astar.project-card--simple .project-actions {
+  margin-top: .75rem;
+  text-align: right;
+}
+
+/* Optional button-y styling for the PDF link */
+#proj-neural-astar.project-card--simple .project-pdf {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #1DA1F2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid transparent; /* add this */
+}
+
+#proj-neural-astar.project-card--simple .project-pdf:hover {
+  border-color: #bbb;
+}
+
 .projects-section {
   padding: 40px 20px;
   max-width: 1200px;

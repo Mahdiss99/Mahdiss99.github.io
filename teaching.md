@@ -9,7 +9,7 @@ permalink: /teaching/
     <!-- Course 1: Measurement Systems -->
     <div class="course">
       <h2>EME 108: Measurement Systems </h2><h3> <p class="institution">University of Californi, Davis</p> </h3>
-      <span class="semester">Spring 2023, Fall 2023</span>
+      <span class="semester">Spring 2023, Fall 2023, Spring 2025</span>
       <p class="description">As a TA for this course, I led laboratory sessions, guiding students through experiments focused on circuits and sensor implementation. I was partially responsible for grading homework assignments and lab memos, ensuring students understood the core principles of measurement systems and practical applications of circuit design and sensors.</p>
     </div>
     <!-- Course 2: Engineering Graphics in Design -->

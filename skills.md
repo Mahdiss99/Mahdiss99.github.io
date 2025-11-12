@@ -74,7 +74,7 @@ permalink: /skills/
     <div class="tech-card">
       <div>
         <h3>Simulation</h3>
-        <p>ROS, Webots, Simulink, AirSim (Unreal Engine), ANSYS, COMSOL, ADAMS, Altium, Fritzing</p>
+        <p>ROS, Webots, Simulink, LabView, AirSim (Unreal Engine), ANSYS, COMSOL, ADAMS, Altium, Fritzing</p>
       </div>
     </div>
     <div class="tech-card">
@@ -101,7 +101,7 @@ permalink: /skills/
   <div class="full-width-card">
     <div>
       <h3>Technical Expertise</h3>
-      <p>Control and Planning, Numerical Optimization, Model Predictive Control (MPC), Machine Learning and Deep Learning (TensorFlow), Physics-Based Simulation, Dynamical System Modeling, Regression (Linear/Nonlinear), Algebra, Vector Arithmetic, Estimation and Filtering, Technical Document Reading, Troubleshooting, Sensor Integration, Microcontroller Programming</p>
+      <p>Control and Planning, Numerical Optimization, Model Predictive Control (MPC), Machine Learning and Deep Learning (TensorFlow/PyTorch), Physics-Based Simulation, Dynamical System Modeling, Regression (Linear/Nonlinear), Algebra, Vector Arithmetic, Estimation and Filtering, Technical Document Reading, Troubleshooting, Sensor Integration, Microcontroller Programming</p>
     </div>
   </div>
 </section>

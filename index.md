@@ -32,15 +32,16 @@ layout: default
     <div class="education-grid">
       <!-- Ph.D. Education Card -->
       <div class="education-card">
-        <h3>Ph.D. Candidate in Mechanical Engineering (GPA: 3.84/4.00) <p><i><span style="font-size: smaller;"> Specializing in control, robotics, and planning </span></i></p></h3>
+        <h3>Ph.D. Candidate in Mechanical Engineering (GPA: 3.84/4.00) <p><i><span style="font-size: smaller;"> Specializing in control, robotics, & planning </span></i></p></h3>
         <p><strong>University of California, Davis</strong><br>California, USA</p>
         <p><span class="education-date">Sep. 2022 – Present</span></p>
         <p>Interaction-aware path planning and control for multi-agent environments with applications in autonomous driving.</p>
+        <p><strong>Supervisor:</strong> Dr. Shima Nazari</p>
         <!-- <p><strong>Relevant Coursework:</strong> Machine Learning, Deep Learning, Estimation and Kalman Filtering, Autonomous Robots, Optimal Control, Game Theory, Optimization, Linear Systems and Signals, Software Design, Data-Driven Control, Learning-Based Control, Reinforcement Learning (in progress)</p> -->
       </div>
       <!-- B.Sc. Education Card -->
       <div class="education-card">
-        <h3>B.Sc. in Mechanical Engineering (GPA: 4.00/4.00) <p><i><span style="font-size: smaller;"> Specializing in mechatronics and control </span></i></p></h3>
+        <h3>B.Sc. in Mechanical Engineering (GPA: 4.00/4.00) <p><i><span style="font-size: smaller;"> Specializing in mechatronics & control </span></i></p></h3>
         <p><strong>University of Tehran</strong><br>Tehran, Iran</p>
         <p><span class="education-date">Sep. 2018 – June 2022</span></p>
         <p><strong>Capstone Project:</strong> Design and Fabrication of a Soft Magnetic Tactile Sensor</p>
@@ -57,7 +58,7 @@ layout: default
       <ul>
         <li><strong>2022</strong> – Won a 9-month fellowship from Mechanical and Aerospace Department at University of California, Davis.</li>
         <li><strong>2021</strong> – Achieved 30th place in the 26th Mechanical Engineering Olympiad for university students.</li>
-        <li><strong>2021</strong> – Won research grant for the hand stabilizer gloves in the 10th International Conference on Acoustics and Vibration (ISAV 2020) student competition.</li>
+        <li><strong>2021</strong> – Won research grant for the hand stabilizer gloves in the 10th International Conference on Acoustics and Vibration (ISAV 2020) student challenge.</li>
         <li><strong>2015</strong> – Third place in the 7th Student National AEROSPACE Competition to design and build gliders, Amirkabir University of Technology, Tehran, Iran.</li>
         <li><strong>2014</strong> – Third place in the fifth National Competition to Design and Build aerospace systems to design and build gliders, Sharif University of Technology, Tehran, Iran.</li>
       </ul>
@@ -68,7 +69,7 @@ layout: default
     <div class="honors-awards">
       <h2>Relevant Coursework</h2>
       <ul>
-        <p> <strong> Grad School:</strong> Machine Learning, Deep Learning, Estimation and Kalman Filtering, Autonomous Robots, Optimal Control, Game Theory, Optimization, Linear Systems and Signals, Software Design, Data-Driven Control, Learning-Based Control, Reinforcement Learning (in progress)</p>
+        <p> <strong> Grad School:</strong> Machine Learning, Deep Learning, Estimation and Kalman Filtering, Autonomous Robots, Optimal Control, Game Theory, Optimization, Linear Systems and Signals, Software Design, Data-Driven Control, Learning-Based Control</p>
         <p><strong> Undergrad:</strong> Mecchatronics, Measurement Systems, Robotics, Controls, Bio-Systems, Dynamics, Statics, Strength of Material</p>
       </ul>
     </div>
