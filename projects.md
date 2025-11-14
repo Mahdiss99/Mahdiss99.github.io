@@ -234,7 +234,7 @@ permalink: /projects/
       <h2>CORE Lab Vehicle Trajectory Prediction Team</h2>
       <p><strong>Role:</strong> Mentor</p>
       <p><strong>Institution:</strong> <a href="https://nazarilab.ucdavis.edu/" target="_blank" rel="noopener noreferrer">CORE Lab, UC Davis</a></p>
-      <p><strong>Duration:</strong> 2024 – Present</p>
+      <p><strong>Duration:</strong> April 2025 – Present</p>
       <ul>
         <li>Mentored an undergraduate team developing machine learning models for interactive vehicle behavior prediction in multi-agent environments.</li>
         <li>Provided technical guidance on data processing, training pipelines, and model validation.</li>
@@ -250,11 +250,11 @@ permalink: /projects/
   <div class="project-card">
     <div class="project-content">
       <h2>F1tenth Autonomous Racing Platform</h2>
-      <p><strong>Role:</strong> Mentor</p>
+      <p><strong>Role:</strong> Supervisor</p>
       <p><strong>Institution:</strong> <a href="https://nazarilab.ucdavis.edu/" target="_blank" rel="noopener noreferrer">CORE Lab, UC Davis</a></p>
-      <p><strong>Duration:</strong> 2023 – 2024</p>
+      <p><strong>Duration:</strong> 2023 – 2025</p>
       <ul>
-        <li>Supervised and co-developed the lab’s F1tenth autonomous racing platform, establishing repeatable calibration and validation procedures.</li>
+        <li>Co-supervised and co-developed the lab’s F1tenth autonomous racing platform, establishing repeatable calibration and validation procedures.</li>
         <li>Guided an undergraduate team through hardware bring-up, instrumentation, and testing.</li>
       </ul>
       <p><strong>Skills:</strong> Embedded Systems, Instrumentation, Leadership, Autonomous Racing</p>

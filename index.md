@@ -14,16 +14,16 @@ layout: default
     <!-- About Me Section with Title and Initial Content -->
     <div class="about-me-content">
       <h2>About Me</h2>
-      <p>I am a Mechanical Engineering Ph.D. candidate in the <a href="https://mae.ucdavis.edu/">MAE Department at UC Davis</a>, working in the <a href="https://nazarilab.ucdavis.edu/">CORE Lab</a> with <a href="https://scholar.google.com/citations?user=bEr1ZzMAAAAJ&hl=en">Prof. Nazari</a>.
-      Specializing in robotics, controls, and planning, I address interaction-aware path planning and control in complex multi-agent environments with applications in autonomous driving and human-robot interactions. Simply speaking, I am developing a novel method to efficiently find an optimal feasible trajectory while predicting how other agents will react to ego's actions in the shared environment by combining path planning with data-driven dynamic </p>
+      <p>I am a Ph.D. candidate in Robotics and Control at the <a href="https://mae.ucdavis.edu/">MAE Department in University of California, Davis</a>, where I work in the <a href="https://nazarilab.ucdavis.edu/">CORE Lab</a> with <a href="https://scholar.google.com/citations?user=bEr1ZzMAAAAJ&hl=en">Prof. Nazari</a> on developing interaction-aware decision-making and path-planning algorithms for autonomous and multi-agent systems. My research explores how autonomous agents can anticipate and respond to each other’s actions, using tools from game theory, optimal control and MPC, and data-driven modeling. I design algorithms that compute safe, efficient trajectories while predicting how surrounding agents may react—an essential </p>
     </div>
   </div>
 
   <!-- Additional About Me Content Below Image -->
   <div class="about-me-content full-width">
-    <p> system modeling. Aside the mathematical framework, I am creating a physics-based simulation environment for conflicting driving scenarios via Python and Julia. My journey in engineering has taught me to build on foundational principles to create practical solutions. </p>
-    <p> Gaining hands-on experience in embedded systems, sensor integrations, and troubleshooting while designing and fabricating a soft tactile sensor in my undergrads equipped me with low-level programmming skills, computer-aided desig, rapid prototyping, and interdisciplinary problem-solving.</p>
-    <p> Through my Ph.D. research, I have advanced my skills in Python, MATLAB, and Julia, applying them to complex simulations and modeling. Leading and mentoring my lab's RC car team on developing an F1Tenth RC platform has deepened my ability to collaborate and apply control strategies in real-world scenarios. I approach every project as a chance to learn, contribute, and push boundaries in robotics and automation.</p>
+    <p> capability for autonomy in complex, interactive environments. My work spans theory, algorithms, and implementation. I develop fast Nash-seeking and interaction-aware MPC methods for multi-agent decision-making, build data-driven dynamic models (including Koopman-based approaches), and create physics-based simulation pipelines in Python that integrate CARLA for large-scale evaluation. </p>
+    <p> Before pursuing my Ph.D., I gained extensive hands-on experience in robotics and mechatronics at the University of Tehran, where I designed and prototyped a soft magnetic tactile sensor, built embedded control and calibration systems (STM32/Arduino), and developed electronics and firmware for real-time sensing and control. </p>
+    <p> Alongside my research, I enjoy mentoring and technical leadership. I guide a team of undergraduate researchers developing deep-learning models for vehicle behavior and trajectory prediction, and I supervised the development of our lab’s F1Tenth autonomous racing platform, coordinating work through a master’s student team lead while contributing to key sensing modules such as wheel-speed encoders and IR-based state estimation. </p>
+    <p> Across all my work, I am motivated by a simple idea: autonomous systems should think and act intelligently in the real world. I strive to build algorithms and tools that make this possible, combining analytical methods with computational models, simulation with real-world constraints, and theory with practical implementation. Whether modeling multi-agent interactions, designing control architectures, or building robotic systems from the ground up, I aim to contribute to autonomy that is more adaptive, reliable, and aware of the world around it. </p>
   </div>
 
   <!-- Education Section in Two Columns -->
@@ -44,7 +44,7 @@ layout: default
         <h3>B.Sc. in Mechanical Engineering (GPA: 4.00/4.00) <p><i><span style="font-size: smaller;"> Specializing in mechatronics & control </span></i></p></h3>
         <p><strong>University of Tehran</strong><br>Tehran, Iran</p>
         <p><span class="education-date">Sep. 2018 – June 2022</span></p>
-        <p><strong>Capstone Project:</strong> Design and Fabrication of a Soft Magnetic Tactile Sensor</p>
+        <p><strong>Thesis Title:</strong> Design and Fabrication of a Soft Magnetic Tactile Sensor</p>
         <p><strong>Supervisor:</strong> Dr. Ali Sadighi</p>
       </div>
     </div>
