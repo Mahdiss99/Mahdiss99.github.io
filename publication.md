@@ -22,8 +22,8 @@ permalink: /publication/
     <div class="publication-card">
       <h2>Multi-Step Deep Koopman Network (MDK-Net) for Vehicle Control in Frenet Frame</h2>
       <p><strong>Authors:</strong> Mohammad Abtahi, <strong>Mahdis Rabbani</strong>, and Armin Abdolmohammadi</p>
-      <p><strong>Journal:</strong> IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) (2025)</p>
-      <a href="https://doi.org/10.48550/arXiv.2503.03002" target="_blank" class="publication-pdf">PDF</a>
+      <p><strong>Journal:</strong> 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
+      <a href="https://doi.org/10.1109/IROS60139.2025.11246508" target="_blank" class="publication-pdf">PDF</a>
     </div>
     <!-- Publication 1 -->
     <div class="publication-card">

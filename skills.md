@@ -58,7 +58,7 @@ permalink: /skills/
     <div class="tech-card">
       <div>
         <h3>Productivity</h3>
-        <p>LaTeX, Microsoft Office (Word, Excel, PowerPoint), Git (Version Control)</p>
+        <p>LaTeX, Microsoft Office (Word, Excel, PowerPoint), Git (Version Control), Docker</p>
       </div>
     </div>
     <div class="tech-card">
@@ -74,7 +74,7 @@ permalink: /skills/
     <div class="tech-card">
       <div>
         <h3>Simulation</h3>
-        <p>ROS, Webots, Simulink, LabView, AirSim (Unreal Engine), ANSYS, COMSOL, ADAMS, Altium, Fritzing</p>
+        <p>ROS, Webots, Simulink, LabView, CARLA, AirSim (Unreal Engine), ANSYS, COMSOL, ADAMS, Altium, Fritzing</p>
       </div>
     </div>
     <div class="tech-card">
