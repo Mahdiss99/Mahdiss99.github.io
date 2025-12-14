@@ -44,7 +44,7 @@ permalink: /projects/
             <source src="/assets/video/Qualification_round.mp4" type="video/mp4">
           </video>
           <video controls class="project-video">
-            <source src="/assets/video/final_round.mp4" type="video/mp4">
+            <source src="/assets/video/Final_round.mp4" type="video/mp4">
           </video>
         </div>
       </div>
