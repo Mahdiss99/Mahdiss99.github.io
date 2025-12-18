@@ -4,7 +4,12 @@ title: "Publication"
 permalink: /publication/
 ---
 <div class="publications-section">
-<p>Below is a list of my published research. For more details, please visit my <a href="https://scholar.google.com/citations?user=0O-aLs8AAAAJ&hl=en" target="_blank"> Google Scholar profile</a>.</p>
+<p>
+Below is a list of my publications. For a complete and up-to-date record, please see my
+<a href="https://scholar.google.com/citations?user=0O-aLs8AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+Google Scholar profile</a>.
+</p>
+
 
   <div class="publication-list">
     <div class="publication-card">
@@ -14,7 +19,7 @@ permalink: /publication/
       <a href="https://doi.org/10.48550/arXiv.2511.03744" target="_blank" class="publication-pdf">PDF</a>
     </div>
     <div class="publication-card">
-      <h2>Optimal Modified Feedback Strategies in LQ Games Under Control Imperfections</h2>
+      <h2 id="lq-game-control-imperfections">Optimal Modified Feedback Strategies in LQ Games Under Control Imperfections </h2>
       <p><strong>Authors:</strong> <strong>Mahdis Rabbani</strong>, Navid Mojahed, and Shima Nazari</p>
       <p><strong>Journal:</strong> Submitted to American Control Conference (ACC) (2026)</p>
       <a href="https://doi.org/10.48550/arXiv.2503.19200" target="_blank" class="publication-pdf">PDF</a>

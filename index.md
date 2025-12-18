@@ -6,24 +6,57 @@ layout: default
 ---
 <div class="homepage-layout">
   <!-- Top Section -->
-  <div class="top-section">
-    <!-- Profile Image -->
-    <div class="profile-image">
-      <img src="/assets/images/profile.jpg" alt="Mahdis Rabbani">
-    </div>
-    <!-- About Me Section with Title and Initial Content -->
-    <div class="about-me-content">
-      <h2>About Me</h2>
-      <p>I am a Ph.D. candidate in Robotics and Control at the <a href="https://mae.ucdavis.edu/">MAE Department in University of California, Davis</a>, where I work in the <a href="https://nazarilab.ucdavis.edu/">CORE Lab</a> with <a href="https://scholar.google.com/citations?user=bEr1ZzMAAAAJ&hl=en">Prof. Nazari</a> on developing interaction-aware decision-making and path-planning algorithms for autonomous and multi-agent systems. My research explores how autonomous agents can anticipate and respond to each other’s actions, using tools from game theory, optimal control and MPC, and data-driven modeling. I design algorithms that compute safe, efficient trajectories while predicting how surrounding agents may react—an essential </p>
+  <div class="top-section centered-hero">
+    <div class="hero-inner">
+      <!-- Profile Image -->
+      <div class="profile-image">
+        <img src="/assets/images/profile.jpg" alt="Mahdis Rabbani">
+      </div>
+      <!-- Elevator pitch -->
+      <div class="hero-pitch">
+        <p>
+        <em>“Ph.D. candidate in Robotics and Control at UC Davis, developing 
+        <strong>real-time game-theoretic MPC methods for interaction-aware autonomous systems</strong>. 
+        My work enables autonomous vehicles and robots to reason about the reactions of other agents 
+        and plan safe, efficient decisions or trajectories in shared environments.”</em>
+        </p>
+      </div>
     </div>
   </div>
 
   <!-- Additional About Me Content Below Image -->
   <div class="about-me-content full-width">
-    <p> capability for autonomy in complex, interactive environments. My work spans theory, algorithms, and implementation. I develop fast Nash-seeking and interaction-aware MPC methods for multi-agent decision-making, build data-driven dynamic models (including Koopman-based approaches), and create physics-based simulation pipelines in Python that integrate CARLA for large-scale evaluation. </p>
-    <p> Before pursuing my Ph.D., I gained extensive hands-on experience in robotics and mechatronics at the University of Tehran, where I designed and prototyped a soft magnetic tactile sensor, built embedded control and calibration systems (STM32/Arduino), and developed electronics and firmware for real-time sensing and control. </p>
-    <p> Alongside my research, I enjoy mentoring and technical leadership. I guide a team of undergraduate researchers developing deep-learning models for vehicle behavior and trajectory prediction, and I supervised the development of our lab’s F1Tenth autonomous racing platform, coordinating work through a master’s student team lead while contributing to key sensing modules such as wheel-speed encoders and IR-based state estimation. </p>
-    <p> Across all my work, I am motivated by a simple idea: autonomous systems should think and act intelligently in the real world. I strive to build algorithms and tools that make this possible, combining analytical methods with computational models, simulation with real-world constraints, and theory with practical implementation. Whether modeling multi-agent interactions, designing control architectures, or building robotic systems from the ground up, I aim to contribute to autonomy that is more adaptive, reliable, and aware of the world around it. </p>
+    <p>
+    I am a Ph.D. candidate in Mechanical Engineering (Robotics & Control) at the <a href="https://mae.ucdavis.edu/">MAE Department in University of California, Davis</a>, working in the <a href="https://nazarilab.ucdavis.edu/" target="_blank" rel="noopener noreferrer">CORE Lab</a> on <strong>interaction-aware trajectory planning and decision-making for non-cooperative multi-agent systems</strong>,
+    with a primary focus on autonomous driving and racing.
+    </p>
+    <p>
+    My research developsreal-time game-theoretic control methods that enable autonomous agents to
+    explicitly reason about how surrounding agents will react to their actions.
+    Specifically, I am developing a computationally efficient methodology to approximate
+    Nash equilibrium solutions and embed it within a
+    receding-horizon/MPC framework for interaction-aware closed-loop trajectory planning.
+    </p>
+    <p>
+    Alongside algorithm design, I place strong emphasis on implementation and evaluation.
+    I build simulation pipelines and autonomy stacks using <strong>Python, ROS2, and C++</strong>,
+    and validate my methods in realistic environments such as <strong>CARLA</strong> and
+    <strong>AutoDrive</strong> simulator, including custom traffic scenarios and racing environments.
+    </p>
+    <p>
+    While my work is motivated by autonomous vehicles, the underlying ideas extend naturally to
+    robotic systems operating in shared, interactive environments, including
+    <strong>multi-robot coordination, mobile robotics, and human–robot interaction</strong>, where agents must make
+    decisions under mutual influence and uncertainty.
+    </p>
+    <p>
+    Before pursuing my Ph.D., I studied Mechanical Engineering at the University of Tehran, where I mostly worked on mechatronics and control.
+    In my B.Sc. thesis, I designed and prototyped a <strong>soft magnetic tactile sensor</strong> for robotics applications.
+    I also designed and built embedded control and calibration systems <strong>(STM32/Arduino)</strong>, and developed electronics and firmware for real-time sensing and control.
+    </p>
+    <p>
+    I also enjoy mentoring and technical leadership, including supervising student teams in autonomous racing and behavior prediction projects.
+    </p>
   </div>
 
   <!-- Education Section in Two Columns -->
@@ -35,7 +68,7 @@ layout: default
         <h3>Ph.D. Candidate in Mechanical Engineering (GPA: 3.84/4.00) <p><i><span style="font-size: smaller;"> Specializing in control, robotics, & planning </span></i></p></h3>
         <p><strong>University of California, Davis</strong><br>California, USA</p>
         <p><span class="education-date">Sep. 2022 – Present</span></p>
-        <p>Interaction-aware path planning and control for multi-agent environments with applications in autonomous driving.</p>
+        <p>Path planning & decision making for autonomous vehicles & multi-agent mobile robots; game-theoretic, interaction-aware optimal control in non-cooperative shared environments</p>
         <p><strong>Supervisor:</strong> Dr. Shima Nazari</p>
         <!-- <p><strong>Relevant Coursework:</strong> Machine Learning, Deep Learning, Estimation and Kalman Filtering, Autonomous Robots, Optimal Control, Game Theory, Optimization, Linear Systems and Signals, Software Design, Data-Driven Control, Learning-Based Control, Reinforcement Learning (in progress)</p> -->
       </div>

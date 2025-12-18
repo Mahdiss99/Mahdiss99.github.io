@@ -6,36 +6,65 @@ permalink: /projects/
 
 <div class="projects-section">
 
-  <h2 class="section-spotlight">Research (UC Davis)</h2>
+  <h2 class="section-spotlight">Autonomy & Robotics Research</h2>
 
   <!-- NEW Project: Autonomous Racing Stack in Simulation -->
   <article class="project-card">
     <h3 class="project-title">Minimum Lap Time Autonomous Racing Stack in AutoDrive Simulator</h3>
     <div class="project-body">
       <div class="project-content">
-        <p><strong>Role:</strong> RoboCORE Team Leader (Control / Planning / State Estimation)</p>
+        <p><strong>Role:</strong> Researcher</p>
         <p><strong>Institution:</strong> <a href="https://nazarilab.ucdavis.edu/" target="_blank" rel="noopener noreferrer">CORE Lab, UC Davis</a></p>
-        <p><strong>Year:</strong> 2025</p>
+        <p><strong>Year:</strong> Fall 2025</p>
         <ul>
-          <li><strong>Reactive control (LiDAR):</strong> implemented a LiDAR-based reactive controller for track following in simulation.</li>
-          <li><strong>Planning + tracking:</strong> developed a planning and tracking pipeline on a new track, using <strong>PID</strong> for tracking.</li>
-          <li><strong>Localization transition:</strong> validated the planning stack using an <strong>idealized high-accuracy localization source</strong>, then worked to replace it with onboard estimation.</li>
-          <li><strong>Sensor fusion:</strong> fused <strong>LiDAR, IMU, and wheel encoders</strong> to estimate global <strong>X, Y, yaw</strong>, and <strong>velocity</strong>.</li>
-          <li><strong>Estimation methods explored:</strong> implemented and evaluated <strong>EKF</strong>, <strong>SLAM</strong>-based mapping/localization, and a <strong>learning-based estimator</strong>.</li>
-          <li><strong>Key insight:</strong> achieved low estimation RMSE, but observed large closed-loop tracking error—highlighting integration challenges between estimation quality and control performance (timing, tuning, interfaces).</li>
+          <li>
+            <strong>Reactive control (LiDAR):</strong>
+            Designed and implemented a LiDAR-based reactive controller for track following,
+            achieving 100% collision-free operation over 10 consecutive laps on the Qualification Track.
+          </li>
+          <li>
+            <strong>Path planning (prototype):</strong>
+            Prototyped a <strong>Delaunay Triangulation–based (DTR)</strong> raceline generation approach and shared
+            findings with the teammate owning the final planning module.
+          </li>
+          <li>
+            <strong>Tracking control:</strong>
+            Tuned the path-tracking <strong>PID controller</strong> to improve stability and lap consistency.
+            This stage was validated using an idealized localization source (IPS) as a baseline.
+          </li>
+          <li>
+            <strong>Localization transition:</strong>
+            Worked on replacing IPS with onboard state estimation to enable fully autonomous operation.
+          </li>
+          <li>
+            <strong>Sensor fusion & state estimation:</strong>
+            Explored multi-sensor localization by fusing <strong>LiDAR, IMU, and wheel encoders</strong> to estimate
+            global position, yaw, and velocity.
+          </li>
+          <li>
+            <strong>Estimation methods explored:</strong>
+            Implemented and evaluated <strong>EKF</strong>, <strong>SLAM-based mapping/localization</strong>,
+            and a <strong>learning-based (MLP) estimator</strong>.
+          </li>
+          <li>
+            <strong>Key insight:</strong>
+            Achieved low estimation RMSE, yet observed large closed-loop tracking error, highlighting
+            practical integration challenges between estimation quality and control performance
+            (latency, tuning, and interfaces).
+          </li>
         </ul>
-        <p><strong>Artifacts:</strong>
-          <a href="https://hub.docker.com/r/mahdiss99/robocore" target="_blank" rel="noopener noreferrer">Docker Image</a>
+        <p>
+          <strong>Artifacts:</strong>
+          <a href="https://hub.docker.com/r/mahdiss99/robocore" target="_blank" rel="noopener noreferrer">
+            Docker Image
+          </a>
         </p>
-        <p><strong>Skills:</strong> Docker, LiDAR, Reactive Control, Motion Planning, PID Tracking, EKF, Sensor Fusion, SLAM, Deep Learning</p>
-        <p class="project-note">
-          <em>Note:</em> Team qualified in the qualification round of
-          <a href="https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-cdc-tf-2025/"
-             target="_blank" rel="noopener noreferrer">
-            AutoDRIVE RoboRacer Sim Racing (CDC-TF 2025)
-          </a>.
+        <p>
+          <strong>Skills:</strong>
+          LiDAR, Reactive Control, Path Planning, PID Control, EKF, Sensor Fusion,
+          SLAM, Deep Learning, Docker
         </p>
-      </div>
+        <p class="project-note"> <em>Note:</em> Team qualified in the qualification round of <a href="https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-cdc-tf-2025/" target="_blank" rel="noopener noreferrer"> AutoDRIVE RoboRacer Sim Racing (CDC-TF 2025)</a>. </p> </div>
       <div class="project-media">
         <div class="media-stack">
           <img src="/assets/images/Network_estimation.png" alt="MLP trained for state estimation by fusing LiDAR, IMU, and wheel encoders.">
@@ -50,6 +79,50 @@ permalink: /projects/
       </div>
     </div>
   </article>
+
+<article class="project-card">
+  <h3 class="project-title">Optimal Modified Feedback Strategies in LQ Games under Control Imperfections</h3>
+
+  <div class="project-body">
+    <div class="project-content">
+      <p><strong>Role:</strong> Researcher</p>
+      <p><strong>Institution:</strong> <a href="https://nazarilab.ucdavis.edu/" target="_blank" rel="noopener noreferrer">CORE Lab, UC Davis</a></p>
+      <p><strong>Year:</strong> Fall 2025</p>
+      <p>
+        Looked at a practical issue in two-player “game-theoretic” control: even if both players compute a Nash strategy, real hardware
+        rarely executes commands perfectly (actuator lag, delays, saturation). Those small execution errors can throw off the interaction
+        and increase the other player’s cost.
+      </p>
+      <ul>
+        <li>
+          Modeled the opponent’s execution mismatch as a measurable disturbance entering the coupled dynamics.
+        </li>
+        <li>
+          Designed a deviation-aware compensation strategy using <strong>LQR-style tools</strong> by augmenting the state and solving
+          an <strong>augmented Riccati recursion</strong>.
+        </li>
+      </ul>
+      <p>
+        <strong>Outcome:</strong> in a spring–damper two-cart example, the compensated controller reduced Player 1’s lag penalty (vs. no
+        compensation) and kept the trajectories closer to the nominal Nash behavior.
+      </p>
+      <p>
+        <strong>Related:</strong>
+        <a href="/publication/#lq-game-control-imperfections">publication entry</a>
+      </p>
+      <p><strong>Skills:</strong> Dynamic Games, Robust/Optimal Control, Interaction Modeling, Riccati Methods, Simulation</p>
+    </div>
+    <div class="project-media">
+      <div class="media-stack">
+        <img src="/assets/images/ACC-01.png"
+             alt="Schematic of the two-cart setup and qualitative final positions under the three cases. Case I (FNE) shows near-symmetric convergence near the origin. Case II (REF) illustrates how Player 2’s actuator lag degrades both players’ positions relative to nominal. Case III (CF) shows that the compensated policy enables Player 1 to mitigate the error and approach its nominal outcome, while Player 2 remains misaligned due to its uncompensated lag." style="margin-bottom: 36px;"/>
+        <img src="/assets/images/Table_optimalModified.png"
+             alt="FINITE-HORIZON COSTS UNDER THE THREE CASES (τ = 0.8 S, α ≈ 0.9814). CF (CASE III) REDUCES PLAYER 1’S LAG PENALTY RELATIVE TO CASE II." />
+      </div>
+    </div>
+  </div>
+</article>
+
 
 
   <!-- Project: Multi-Step Deep Koopman -->
@@ -186,7 +259,7 @@ permalink: /projects/
 
 
 <div class="projects-section">
-  <h2 class="section-spotlight">Earlier Research (University of Tehran)</h2>
+  <h2 class="section-spotlight">Mechatronics & Systems Projects</h2>
 
   <!-- Project: Soft Magnetic Tactile Sensor (your custom collage preserved, but split title full-width) -->
   <article class="project-card">
@@ -310,7 +383,7 @@ permalink: /projects/
 
 
 <div class="projects-section">
-  <h2 class="section-spotlight">Mentorship</h2>
+  <h2 class="section-spotlight">Mentorship & Technical Leadership</h2>
 
   <!-- Mentorship 1 -->
   <article class="project-card project--no-split">
@@ -329,7 +402,7 @@ permalink: /projects/
 
   <!-- Mentorship 2 (two images side-by-side) -->
   <article class="project-card">
-    <h3 class="project-title">F1tenth Autonomous Racing Platform</h3>
+    <h3 class="project-title">F1Tenth Autonomous Racing Platform</h3>
     <div class="project-body">
       <div class="project-content">
         <p><strong>Role:</strong> Supervisor</p>
