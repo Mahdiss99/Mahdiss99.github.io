@@ -26,7 +26,7 @@ Google Scholar profile</a>.
     </div>
     <div class="publication-card">
       <h2>Multi-Step Deep Koopman Network (MDK-Net) for Vehicle Control in Frenet Frame</h2>
-      <p><strong>Authors:</strong> Mohammad Abtahi, <strong>Mahdis Rabbani</strong>, and Armin Abdolmohammadi</p>
+      <p><strong>Authors:</strong> Mohammad Abtahi, <strong>Mahdis Rabbani</strong>, Armin Abdolmohammadi, and Shima Nazari</p>
       <p><strong>Journal:</strong> 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
       <a href="https://doi.org/10.1109/IROS60139.2025.11246508" target="_blank" class="publication-pdf">PDF</a>
     </div>
@@ -47,7 +47,7 @@ Google Scholar profile</a>.
     <!-- Publication 3 -->
     <div class="publication-card">
       <h2>Design and Fabrication of a Soft Magnetic Tactile Sensor</h2>
-      <p><strong>Authors:</strong> <strong>Mahdis Rabbani</strong>, Mohammad Amin Mirzaee, Mahdi Robati</p>
+      <p><strong>Authors:</strong> <strong>Mahdis Rabbani</strong>, Mohammad Amin Mirzaee, Mahdi Robati, and Ali Sadighi</p>
       <p><strong>Conference:</strong> 2022 10th RSI International Conference on Robotics and Mechatronics (ICRoM), IEEE (2022)</p>
       <a href="https://doi.org/10.1109/ICRoM57054.2022.10025333" target="_blank" class="publication-pdf">PDF</a>
     </div>

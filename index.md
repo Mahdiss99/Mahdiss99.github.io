@@ -103,7 +103,7 @@ layout: default
       <h2>Relevant Coursework</h2>
       <ul>
         <p> <strong> Grad School:</strong> Machine Learning, Deep Learning, Estimation and Kalman Filtering, Autonomous Robots, Optimal Control, Game Theory, Optimization, Linear Systems and Signals, Software Design, Data-Driven Control, Learning-Based Control</p>
-        <p><strong> Undergrad:</strong> Mecchatronics, Measurement Systems, Robotics, Controls, Bio-Systems, Dynamics, Statics, Strength of Material</p>
+        <p><strong> Undergrad:</strong> Mechatronics, Measurement Systems, Robotics, Controls, Bio-Systems, Dynamics, Statics, Strength of Material</p>
       </ul>
     </div>
   </div>
