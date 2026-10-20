@@ -1,0 +1,12 @@
+# Primary site navigation (rendered by _includes/header.html).
+# A link is marked current on its own URL and on pages below it.
+- title: Home
+  url: /
+- title: Projects
+  url: /projects/
+- title: Publications
+  url: /publication/
+- title: Experience
+  url: /experience/
+- title: About
+  url: /about/

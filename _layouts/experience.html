@@ -1,0 +1,59 @@
+---
+layout: default
+---
+{%- assign all = site.experiences | sort: "order" -%}
+{%- for e in all -%}
+  {%- if e.url == page.url -%}{%- assign index = forloop.index0 -%}{%- endif -%}
+{%- endfor -%}
+{%- assign last_index = all.size | minus: 1 -%}
+
+<article class="case container">
+  <nav class="case__back" aria-label="Breadcrumb">
+    <a href="{{ '/experience/' | relative_url }}"><span aria-hidden="true">←</span> All experience</a>
+  </nav>
+
+  <header class="case__header">
+    <p class="case__eyebrow"><a href="{{ '/experience/' | relative_url }}">Experience</a></p>
+    <h1 class="case__title">{{ page.organization }}</h1>
+    <p class="case__subtitle">{{ page.position }}</p>
+  </header>
+
+  <div class="case__layout">
+    <aside class="case__aside" aria-label="Position details">
+      <dl class="case__meta">
+        {%- if page.lab %}
+        <div><dt>Lab</dt><dd>{{ page.lab }}</dd></div>
+        {%- endif %}
+        <div><dt>Location</dt><dd>{{ page.location }}</dd></div>
+        <div><dt>Period</dt><dd>{{ page.period }}</dd></div>
+      </dl>
+    </aside>
+
+    <div class="case__main">
+      <div class="case__body">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+  <nav class="case__pager" aria-label="More experience">
+    {%- if index > 0 -%}
+      {%- assign prev_index = index | minus: 1 -%}
+      {%- assign prev = all[prev_index] %}
+    <a class="case__pager-link case__pager-link--prev" href="{{ prev.url | relative_url }}">
+      <span class="case__pager-label"><span aria-hidden="true">←</span> Previous</span>
+      <span class="case__pager-title">{{ prev.organization }}</span>
+    </a>
+    {%- else %}
+    <span></span>
+    {%- endif -%}
+    {%- if index < last_index -%}
+      {%- assign next_index = index | plus: 1 -%}
+      {%- assign next = all[next_index] %}
+    <a class="case__pager-link case__pager-link--next" href="{{ next.url | relative_url }}">
+      <span class="case__pager-label">Next <span aria-hidden="true">→</span></span>
+      <span class="case__pager-title">{{ next.organization }}</span>
+    </a>
+    {%- endif %}
+  </nav>
+</article>

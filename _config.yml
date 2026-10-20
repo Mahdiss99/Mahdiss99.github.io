@@ -49,6 +49,29 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+# Collections: one document per project / position.
+#   _projects/<slug>.md    -> /projects/<slug>/   (listed on /projects/, featured ones on /)
+#   _experiences/<slug>.md -> /experience/<slug>/ (listed on /experience/ and /)
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  experiences:
+    output: true
+    permalink: /experience/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+  - scope:
+      path: ""
+      type: experiences
+    values:
+      layout: experience
+
 header_pages:
   - projects.md   # Projects page will appear first
   - publication.md

@@ -1,0 +1,64 @@
+---
+layout: default
+---
+{%- assign category = site.data.project_categories | where: "id", page.category | first -%}
+{%- assign all_projects = site.projects | sort: "order" -%}
+{%- for p in all_projects -%}
+  {%- if p.url == page.url -%}{%- assign index = forloop.index0 -%}{%- endif -%}
+{%- endfor -%}
+{%- assign last_index = all_projects.size | minus: 1 -%}
+
+<article class="case container">
+  <nav class="case__back" aria-label="Breadcrumb">
+    <a href="{{ '/projects/' | relative_url }}"><span aria-hidden="true">←</span> All projects</a>
+  </nav>
+
+  <header class="case__header">
+    <p class="case__eyebrow">
+      <a href="{{ '/projects/' | relative_url }}#{{ category.id }}">{{ category.title }}</a>
+    </p>
+    <h1 class="case__title">{{ page.title }}</h1>
+  </header>
+
+  <div class="case__layout">
+    <aside class="case__aside" aria-label="Project details">
+      <dl class="case__meta">
+        {%- for item in page.meta %}
+        <div><dt>{{ item.label }}</dt><dd>{{ item.value }}</dd></div>
+        {%- endfor %}
+      </dl>
+    </aside>
+
+    <div class="case__main">
+      <section class="case__lead" aria-label="Summary">
+        <p class="case__takeaway">{{ page.takeaway }}</p>
+        <p class="case__outcome"><span class="outcome-label">{{ page.outcome_label }}</span> {{ page.outcome }}</p>
+      </section>
+
+      <div class="case__body">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+  <nav class="case__pager" aria-label="More projects">
+    {%- if index > 0 -%}
+      {%- assign prev_index = index | minus: 1 -%}
+      {%- assign prev = all_projects[prev_index] %}
+    <a class="case__pager-link case__pager-link--prev" href="{{ prev.url | relative_url }}">
+      <span class="case__pager-label"><span aria-hidden="true">←</span> Previous</span>
+      <span class="case__pager-title">{{ prev.title }}</span>
+    </a>
+    {%- else %}
+    <span></span>
+    {%- endif -%}
+    {%- if index < last_index -%}
+      {%- assign next_index = index | plus: 1 -%}
+      {%- assign next = all_projects[next_index] %}
+    <a class="case__pager-link case__pager-link--next" href="{{ next.url | relative_url }}">
+      <span class="case__pager-label">Next <span aria-hidden="true">→</span></span>
+      <span class="case__pager-title">{{ next.title }}</span>
+    </a>
+    {%- endif %}
+  </nav>
+</article>

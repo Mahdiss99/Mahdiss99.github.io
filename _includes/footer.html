@@ -1,27 +1,25 @@
 <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-column">
-        <p><strong>Mahdis Rabbani</strong> | Research Assistant</p>
-        <p>University of California, Davis</p>
-        <p><a href="mailto:mrabbani@ucdavis.edu"><i class="fas fa-envelope"></i> mrabbani@ucdavis.edu</a></p>
-      </div>
-      <div class="footer-column">
-        <p>
-          <a href="https://www.linkedin.com/in/mahdis-rabbani" target="_blank">
-            <i class="fab fa-linkedin"></i> Linked-In
-          </a>
-        </p>
-        <p>
-          <a href="https://scholar.google.com/citations?user=0O-aLs8AAAAJ&hl=en" target="_blank">
-            <i class="fas fa-graduation-cap"></i> Google Scholar
-          </a>
-        </p>
-        <p>
-          <!-- <a href="/assets/pdfs/resume.pdf" target="_blank">
-            <i class="fas fa-file-pdf"></i> Download Resume
-          </a> -->
-        </p>
-      </div>
+  <div class="container site-footer__inner">
+    <div class="site-footer__identity">
+      <p><strong>Mahdis Rabbani</strong> | Research Assistant</p>
+      <p>University of California, Davis</p>
     </div>
-  </footer>
-  
+
+    <nav aria-label="Site">
+      <ul class="site-footer__nav">
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        <li><a href="{{ '/skills/' | relative_url }}">Skills</a></li>
+        <li><a href="{{ '/teaching/' | relative_url }}">Teaching</a></li>
+      </ul>
+    </nav>
+
+    <ul class="site-footer__links">
+      <li><a href="mailto:mrabbani@ucdavis.edu">{% include icon.html name="email" %}<span>mrabbani@ucdavis.edu</span></a></li>
+      <li><a href="https://www.linkedin.com/in/mahdis-rabbani" target="_blank" rel="noopener noreferrer">{% include icon.html name="linkedin" %}<span>Linked-In</span></a></li>
+      <li><a href="https://scholar.google.com/citations?user=0O-aLs8AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">{% include icon.html name="scholar" %}<span>Google Scholar</span></a></li>
+      <!-- <li><a href="/assets/pdfs/resume.pdf" target="_blank">
+        Download Resume
+      </a></li> -->
+    </ul>
+  </div>
+</footer>

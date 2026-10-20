@@ -1,0 +1,26 @@
+{%- comment -%}
+  One project row: thumbnail, eyebrow, title, takeaway, outcome.
+  Params: project (required), show_category (bool), light (bool: text only),
+          heading ("h2" or "h3", default h3).
+  Summaries come from the project's front matter (takeaway / outcome_label / outcome).
+{%- endcomment -%}
+{%- assign p = include.project -%}
+{%- assign tag = include.heading | default: "h3" -%}
+{%- assign category = site.data.project_categories | where: "id", p.category | first -%}
+<article class="work{% if include.light %} work--light{% endif %}">
+  {%- unless include.light %}
+  <div class="work__thumb" aria-hidden="true">
+    {%- if p.thumb %}
+    <img src="{{ p.thumb | relative_url }}" alt="" width="960" height="640" loading="lazy" decoding="async">
+    {%- else %}
+    <span class="work__placeholder">{{ p.placeholder }}</span>
+    {%- endif %}
+  </div>
+  {%- endunless %}
+  <div class="work__body">
+    <p class="work__eyebrow">{% if include.show_category %}{{ category.title }} · {% endif %}{{ p.date_label }}</p>
+    <{{ tag }} class="work__title"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></{{ tag }}>
+    <p class="work__takeaway">{{ p.takeaway }}</p>
+    <p class="work__outcome"><span class="outcome-label">{{ p.outcome_label }}</span> {{ p.outcome }}</p>
+  </div>
+</article>

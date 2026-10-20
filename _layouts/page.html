@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article class="page container">
+  <header class="page-header">
+    <h1 class="page-title">{{ page.heading | default: page.title | escape }}</h1>
+    {%- assign toc = page.toc -%}
+    {%- if page.toc_data -%}{%- assign toc = site.data[page.toc_data] -%}{%- endif -%}
+    {%- if toc -%}
+    <nav class="page-toc" aria-label="On this page">
+      <ul>
+        {%- for item in toc %}
+        <li><a href="#{{ item.id }}">{{ item.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+    {%- endif -%}
+  </header>
+
+  <div class="page-body">
+    {{ content }}
+  </div>
+</article>

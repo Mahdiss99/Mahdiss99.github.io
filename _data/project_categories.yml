@@ -1,0 +1,16 @@
+# Project groups on /projects/, in display order.
+# `id` is the section anchor and the `category` value in each _projects/ document.
+# `legacy_ids` keep anchors from earlier versions of the page working.
+# `light: true` renders the group in the lighter, text-only style.
+- id: autonomous-systems-planning
+  title: Autonomous Systems & Planning
+  legacy_ids: [autonomy-robotics]
+- id: control-dynamics-estimation
+  title: Control, Dynamics & Estimation
+- id: embedded-mechatronics
+  title: Embedded Systems & Mechatronics
+  legacy_ids: [mechatronics-systems]
+- id: research-leadership
+  title: Research Leadership
+  legacy_ids: [mentorship-leadership]
+  light: true
