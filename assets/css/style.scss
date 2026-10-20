@@ -154,6 +154,18 @@ strong { font-weight: 600; }
 
 .site-main:focus { outline: none; }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 
 /* 3. Layout primitives =================================================== */
 
@@ -1493,6 +1505,20 @@ strong { font-weight: 600; }
 }
 
 .pub__recognition { margin-top: 8px; }
+
+/* Equal-contribution marker (e.g. "Navid Mojahed*, Mahdis Rabbani*") */
+.equal-mark {
+  margin-left: 1px;
+  font-size: 0.75em;
+  font-weight: 700;
+  color: var(--navy-2);
+}
+
+.pub__note {
+  margin-top: 2px;
+  font-size: var(--fs-label);
+  color: var(--muted);
+}
 
 @media (min-width: 720px) {
   .pub {

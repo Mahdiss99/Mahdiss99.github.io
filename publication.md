@@ -99,7 +99,8 @@ Google Scholar profile</a>.
         <span class="pub__year">2026</span>
         <div class="pub__body">
           <h3 class="pub__title">Structured Koopman Lifted Finite Memory Identification via Truncated Grunwald Letnikov Kernels</h3>
-          <p class="pub__authors">Navid Mojahed, <strong>Mahdis Rabbani</strong>, and Shima Nazari</p>
+          <p class="pub__authors">Navid Mojahed<sup class="equal-mark" aria-hidden="true">*</sup><span class="visually-hidden"> (equal contribution)</span>, <strong>Mahdis Rabbani</strong><sup class="equal-mark" aria-hidden="true">*</sup><span class="visually-hidden"> (equal contribution)</span>, and Shima Nazari</p>
+          <p class="pub__note" aria-hidden="true"><sup class="equal-mark">*</sup> Equal contribution</p>
           <p class="pub__venue">arXiv preprint, 2026 <span class="pub__status">Submitted to ACC 2027</span></p>
           <p class="pub__links"><a href="https://arxiv.org/abs/2603.16851" target="_blank" rel="noopener noreferrer" class="text-link">arXiv</a></p>
         </div>
