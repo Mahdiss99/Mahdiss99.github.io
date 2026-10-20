@@ -6,6 +6,9 @@ featured: 3
 date_label: "Spring 2025"
 image: /assets/images/thumbs/multi-step-deep-koopman.jpg
 description: "Embedded a Python deep-Koopman vehicle model in MATLAB/Simulink for trajectory-tracking MPC of a high-fidelity CarSim vehicle."
+# Short muted loop shown on the homepage (Selected Work) only
+preview_video: /assets/video/previews/mdk-net-preview.mp4
+preview_poster: /assets/video/previews/mdk-net-preview.jpg
 outcome_label: "Implementation"
 outcome: "Cross-language Python–Simulink MPC integration with the CarSim-modeled vehicle; the work was presented at IROS 2025."
 meta:

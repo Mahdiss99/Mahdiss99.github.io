@@ -6,6 +6,9 @@ featured: 1
 date_label: "Fall 2025"
 image: /assets/images/thumbs/minimum-lap-time-autonomous-racing.jpg
 description: "Developed reactive control and explored LiDAR, IMU, and wheel-encoder state estimation (EKF, SLAM, and an MLP estimator) for an autonomous racing stack in the AutoDRIVE simulator."
+# Short muted loop shown on the homepage (Selected Work) only
+preview_video: /assets/video/previews/roboracer-preview.mp4
+preview_poster: /assets/video/previews/roboracer-preview.jpg
 outcome_label: "Key Result"
 outcome: "In simulation, the LiDAR-based reactive controller completed 10 consecutive collision-free laps on the Qualification Track; the team qualified in the AutoDRIVE RoboRacer Sim Racing qualification round."
 meta:

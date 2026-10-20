@@ -54,7 +54,7 @@ layout: default
     <div class="work-list">
       {%- assign featured = site.projects | where_exp: "p", "p.featured" | sort: "featured" -%}
       {%- for project in featured %}
-      {% include project-entry.html project=project show_category=true %}
+      {% include project-entry.html project=project show_category=true video=true %}
       {%- endfor %}
     </div>
   </section>
@@ -107,3 +107,5 @@ layout: default
     </ul>
   </section>
 </div>
+
+<script src="{{ '/assets/js/preview-video.js' | relative_url }}" defer></script>
