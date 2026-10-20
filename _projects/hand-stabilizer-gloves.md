@@ -3,10 +3,10 @@ title: "Hand Stabilizer Gloves for Parkinson Disease"
 category: embedded-mechatronics
 order: 10
 date_label: "June 2020 – January 2021"
-thumb: /assets/images/thumbs/hand-stabilizer-gloves.jpg
-takeaway: "Designed a passive vibration absorber with a magnetic spring for a hand-stabilizer glove, plus a vibrating shaft to simulate Parkinson tremors."
-outcome_label: "Result"
-outcome: "The project won a research grant at ISAV 2020."
+image: /assets/images/thumbs/hand-stabilizer-gloves.jpg
+description: "Designed components of a hand-stabilizer glove for Parkinson disease using SOLIDWORKS and design optimization."
+outcome_label: "Design"
+outcome: "A passive vibration absorber with a magnetic spring, and a vibrating shaft designed to simulate Parkinson tremors."
 meta:
   - label: "Role"
     value: "Researcher"
@@ -34,7 +34,13 @@ meta:
   <figcaption aria-hidden="true">Hand tremor simulator.</figcaption>
 </figure>
 
-<p class="project__skills"><strong>Skills:</strong> SOLIDWORKS, Design optimization</p>
+<div class="project__skills">
+  <p class="project__skills-label">Skills</p>
+  <ul class="skill-tags">
+    <li>SOLIDWORKS</li>
+    <li>Design optimization</li>
+  </ul>
+</div>
 
 <p class="project__detail"><strong>Highlights:</strong> Won research grant at
   <a href="https://2020.isav.ir/?lang=en" target="_blank" rel="noopener noreferrer">ISAV 2020</a>.

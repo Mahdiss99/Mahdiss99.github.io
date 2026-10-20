@@ -1,0 +1,34 @@
+# Publication <-> project relationships (single source of truth).
+#
+#   anchor        id of the publication entry on /publication/ (stable; used in links)
+#   title         publication title as listed on /publication/
+#   citation      short venue label shown on project pages
+#   paper_url     the existing paper link on /publication/
+#   recognition   optional distinction label (shown once on the paper and once on its project page)
+#   projects      _projects/<slug> pages; `supporting: true` marks related technical work
+#
+# Only add verified associations; every slug must exist in _projects/.
+- anchor: mdk-net-iros-2025
+  title: Multi-Step Deep Koopman Network (MDK-Net) for Vehicle Control in Frenet Frame
+  citation: IROS 2025
+  paper_url: https://doi.org/10.1109/IROS60139.2025.11246508
+  projects:
+    - slug: multi-step-deep-koopman
+
+- anchor: lq-game-control-imperfections
+  title: Optimal Modified Feedback Strategies in LQ Games Under Control Imperfections
+  citation: ACC 2026
+  paper_url: https://doi.org/10.48550/arXiv.2503.19200
+  projects:
+    - slug: optimal-modified-feedback-lq-games
+
+- anchor: soft-magnetic-tactile-sensor-icrom-2022
+  title: Design and Fabrication of a Soft Magnetic Tactile Sensor
+  citation: ICRoM 2022
+  paper_url: https://doi.org/10.1109/ICRoM57054.2022.10025333
+  recognition: Best Paper Finalist · ICRoM 2022
+  recognition_url: https://icrom.ir/
+  projects:
+    - slug: soft-magnetic-tactile-sensor
+    - slug: tactile-sensor-test-rig
+      supporting: true

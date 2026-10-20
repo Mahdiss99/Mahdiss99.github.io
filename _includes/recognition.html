@@ -1,0 +1,6 @@
+{%- comment -%}
+  Distinction label (e.g. Best Paper Finalist). Param: link (an entry from _data/research_links.yml).
+{%- endcomment -%}
+{%- if include.link.recognition -%}
+<span class="recognition">{% include icon.html name="award" %}<span>{% if include.link.recognition_url %}<a href="{{ include.link.recognition_url }}" target="_blank" rel="noopener noreferrer">{{ include.link.recognition }}</a>{% else %}{{ include.link.recognition }}{% endif %}</span></span>
+{%- endif -%}

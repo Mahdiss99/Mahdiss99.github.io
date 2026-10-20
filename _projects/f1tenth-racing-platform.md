@@ -3,9 +3,9 @@ title: "F1Tenth Autonomous Racing Platform"
 category: research-leadership
 order: 13
 date_label: "2023 – 2025"
-thumb: /assets/images/thumbs/f1tenth-racing-platform.jpg
-takeaway: "Co-supervised and co-developed the CORE Lab's F1tenth autonomous racing platform."
-outcome_label: "Contribution"
+image: /assets/images/thumbs/f1tenth-racing-platform.jpg
+description: "Co-supervised and co-developed the CORE Lab's F1tenth autonomous racing platform."
+outcome_label: "Technical Leadership"
 outcome: "Established repeatable calibration/validation procedures and guided an undergraduate team through hardware bring-up, instrumentation, and testing."
 meta:
   - label: "Role"
@@ -32,4 +32,12 @@ meta:
 </figure>
 </div>
 
-<p class="project__skills"><strong>Skills:</strong> Embedded Systems, Instrumentation, Leadership, Autonomous Racing</p>
+<div class="project__skills">
+  <p class="project__skills-label">Skills</p>
+  <ul class="skill-tags">
+    <li>Embedded Systems</li>
+    <li>Instrumentation</li>
+    <li>Leadership</li>
+    <li>Autonomous Racing</li>
+  </ul>
+</div>

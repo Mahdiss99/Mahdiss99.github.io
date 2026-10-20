@@ -4,8 +4,8 @@ category: research-leadership
 order: 12
 date_label: "April 2025 – Present"
 placeholder: "Vehicle Trajectory Prediction"
-takeaway: "Mentoring an undergraduate team developing ML models for interactive vehicle behavior prediction in multi-agent environments."
-outcome_label: "Contribution"
+description: "Mentoring an undergraduate team developing ML models for interactive vehicle behavior prediction in multi-agent environments."
+outcome_label: "Mentorship"
 outcome: "Guiding the team's data processing, training pipelines, and model validation."
 meta:
   - label: "Role"
@@ -21,4 +21,12 @@ meta:
   <li>Guided data processing, training pipelines, and model validation.</li>
 </ul>
 
-<p class="project__skills"><strong>Skills:</strong> Machine Learning, Python, Data Modeling, Mentorship</p>
+<div class="project__skills">
+  <p class="project__skills-label">Skills</p>
+  <ul class="skill-tags">
+    <li>Machine Learning</li>
+    <li>Python</li>
+    <li>Data Modeling</li>
+    <li>Mentorship</li>
+  </ul>
+</div>

@@ -31,13 +31,36 @@ layout: default
 
     <div class="case__main">
       <section class="case__lead" aria-label="Summary">
-        <p class="case__takeaway">{{ page.takeaway }}</p>
+        <p class="case__takeaway">{{ page.description }}</p>
         <p class="case__outcome"><span class="outcome-label">{{ page.outcome_label }}</span> {{ page.outcome }}</p>
       </section>
 
       <div class="case__body">
         {{ content }}
       </div>
+
+      {%- comment -%} Related publication(s), from _data/research_links.yml {%- endcomment -%}
+      {%- for link in site.data.research_links -%}
+        {%- for item in link.projects -%}
+          {%- capture item_url -%}/projects/{{ item.slug }}/{%- endcapture -%}
+          {%- if item_url == page.url %}
+      <section class="related-pub" aria-labelledby="related-pub-{{ link.anchor }}">
+        <h2 class="related-pub__heading" id="related-pub-{{ link.anchor }}">Related Publication</h2>
+        <p class="related-pub__title">{{ link.title }}</p>
+        <p class="related-pub__meta">{{ link.citation }}{% if item.supporting %} · this project is supporting technical work for the paper{% endif %}</p>
+        {%- unless item.supporting %}
+        <p class="related-pub__recognition">{% include recognition.html link=link %}</p>
+        {%- endunless %}
+        <p class="related-pub__actions">
+          <a class="button-outline" href="{{ '/publication/' | relative_url }}#{{ link.anchor }}">View Publication <span aria-hidden="true">→</span></a>
+          {%- unless content contains link.paper_url %}
+          <a class="text-link" href="{{ link.paper_url }}" target="_blank" rel="noopener noreferrer">Paper</a>
+          {%- endunless %}
+        </p>
+      </section>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor %}
     </div>
   </div>
 

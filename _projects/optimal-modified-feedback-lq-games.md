@@ -4,9 +4,9 @@ category: control-dynamics-estimation
 order: 5
 featured: 2
 date_label: "Fall 2025"
-thumb: /assets/images/thumbs/optimal-modified-feedback-lq-games.jpg
-takeaway: "Designed a deviation-aware compensation strategy for two-player LQ games in which the opponent's commands are executed imperfectly (e.g., actuator lag)."
-outcome_label: "Result"
+image: /assets/images/thumbs/optimal-modified-feedback-lq-games.jpg
+description: "Designed a deviation-aware compensation strategy for two-player LQ games in which the opponent's commands are executed imperfectly (e.g., actuator lag)."
+outcome_label: "Key Result"
 outcome: "In a spring–damper two-cart example, compensation reduced Player 1's lag penalty relative to the uncompensated case and kept trajectories closer to the nominal Nash behavior."
 meta:
   - label: "Role"
@@ -48,9 +48,13 @@ meta:
   <figcaption aria-hidden="true">FINITE-HORIZON COSTS UNDER THE THREE CASES (τ = 0.8 S, α ≈ 0.9814). CF (CASE III) REDUCES PLAYER 1’S LAG PENALTY RELATIVE TO CASE II.</figcaption>
 </figure>
 
-<p class="project__detail">
-  <strong>Related:</strong>
-  <a href="/publication/#lq-game-control-imperfections">publication entry</a>
-</p>
-
-<p class="project__skills"><strong>Skills:</strong> Dynamic Games, Robust/Optimal Control, Interaction Modeling, Riccati Methods, Simulation</p>
+<div class="project__skills">
+  <p class="project__skills-label">Skills</p>
+  <ul class="skill-tags">
+    <li>Dynamic Games</li>
+    <li>Robust/Optimal Control</li>
+    <li>Interaction Modeling</li>
+    <li>Riccati Methods</li>
+    <li>Simulation</li>
+  </ul>
+</div>

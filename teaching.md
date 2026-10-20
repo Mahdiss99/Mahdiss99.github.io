@@ -2,6 +2,7 @@
 layout: page
 title: "Teaching"
 permalink: /teaching/
+description: "Teaching experience of Mahdis Rabbani: teaching assistant for Measurement Systems and Engineering Graphics in Design at UC Davis, and Dynamics at the University of Tehran."
 ---
 
 <ol class="teaching-list">
@@ -12,7 +13,7 @@ permalink: /teaching/
     </div>
     <div class="course__body">
       <h2 class="course__title">EME 108: Measurement Systems </h2>
-      <p class="course__institution">University of Californi, Davis</p>
+      <p class="course__institution">University of California, Davis</p>
       <p class="course__description">As a TA for this course, I led laboratory sessions, guiding students through experiments focused on circuits and sensor implementation. I was partially responsible for grading homework assignments and lab memos, ensuring students understood the core principles of measurement systems and practical applications of circuit design and sensors.</p>
     </div>
   </li>
@@ -35,7 +36,7 @@ permalink: /teaching/
     <div class="course__body">
       <h2 class="course__title">Dynamics </h2>
       <p class="course__institution">University of Tehran, Iran</p>
-      <p class="course__description">As part of a team, I contributed to the creation of a solution manual for the textbook "Engineering Mechanics: Dynamics, J.L.Meriam, L.G. Kraige". In addition to grading assignments and projects, I co-designed course projects to enhance students' understanding of kinematic and kinetic analysis as well as using simulators. I also recorded a tutorial on using the ADAMS software, providing students with additional resources.</p>
+      <p class="course__description">As part of a team, I contributed to the creation of a solution manual for the textbook "Engineering Mechanics: Dynamics, J.L. Meriam, L.G. Kraige". In addition to grading assignments and projects, I co-designed course projects to enhance students' understanding of kinematic and kinetic analysis as well as using simulators. I also recorded a tutorial on using the ADAMS software, providing students with additional resources.</p>
     </div>
   </li>
 </ol>

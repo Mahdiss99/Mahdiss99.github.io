@@ -3,9 +3,9 @@ title: "MIMO Optimal Robust Control for Fixed-Wing UAVs"
 category: control-dynamics-estimation
 order: 6
 date_label: "2024"
-thumb: /assets/images/thumbs/mimo-robust-control-fixed-wing-uav.jpg
-takeaway: "Compared classical and robust control designs for fixed-wing UAV dynamics in MATLAB/Simulink."
-outcome_label: "Work completed"
+image: /assets/images/thumbs/mimo-robust-control-fixed-wing-uav.jpg
+description: "Compared classical and robust control designs for fixed-wing UAV dynamics in MATLAB/Simulink."
+outcome_label: "Evaluation"
 outcome: "Designed and compared PID, Youla, and H∞ controllers and analyzed performance and robustness under model uncertainty with frequency-domain tools."
 meta:
   - label: "Role"
@@ -26,4 +26,12 @@ meta:
   <figcaption aria-hidden="true">Control performance comparison for fixed-wing UAV.</figcaption>
 </figure>
 
-<p class="project__skills"><strong>Skills:</strong> MATLAB/Simulink, Robust Control, MIMO Systems, UAV Dynamics</p>
+<div class="project__skills">
+  <p class="project__skills-label">Skills</p>
+  <ul class="skill-tags">
+    <li>MATLAB/Simulink</li>
+    <li>Robust Control</li>
+    <li>MIMO Systems</li>
+    <li>UAV Dynamics</li>
+  </ul>
+</div>

@@ -3,9 +3,9 @@ title: "Path-Planning and Collision Avoidance of Ground Vehicles"
 category: autonomous-systems-planning
 order: 4
 date_label: "Summer 2023 – Summer 2024"
-thumb: /assets/images/thumbs/ground-vehicle-collision-avoidance.jpg
-takeaway: "Incorporated collision avoidance into optimal-control problems for ground vehicles using linear and nonlinear MPC."
-outcome_label: "Work completed"
+image: /assets/images/thumbs/ground-vehicle-collision-avoidance.jpg
+description: "Incorporated collision avoidance into optimal-control problems for ground vehicles using linear and nonlinear MPC."
+outcome_label: "Implementation"
 outcome: "Created a vehicle dynamic model in Julia and implemented collision avoidance in linear and nonlinear MPC formulations."
 meta:
   - label: "Role"
@@ -26,4 +26,12 @@ meta:
   <figcaption aria-hidden="true">OSQP / MPC illustration.</figcaption>
 </figure>
 
-<p class="project__skills"><strong>Skills:</strong> Julia, Object-oriented programming, Vehicle dynamics, MPC</p>
+<div class="project__skills">
+  <p class="project__skills-label">Skills</p>
+  <ul class="skill-tags">
+    <li>Julia</li>
+    <li>Object-oriented programming</li>
+    <li>Vehicle dynamics</li>
+    <li>MPC</li>
+  </ul>
+</div>

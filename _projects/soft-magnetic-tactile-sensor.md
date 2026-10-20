@@ -3,10 +3,10 @@ title: "Design and Fabrication of a Soft Magnetic Tactile Sensor"
 category: embedded-mechatronics
 order: 8
 date_label: "Feb. 2022 – Sep. 2022"
-thumb: /assets/images/thumbs/soft-magnetic-tactile-sensor.jpg
-takeaway: "Designed and fabricated a Hall-effect-based soft tactile sensor, from dome deformation analysis and 3D-printed prototyping to Arduino-based data acquisition."
-outcome_label: "Result"
-outcome: "Fabricated sensor with a multi-layer perceptron that predicts applied force from Hall-effect signals; the paper was a 4th best paper finalist at ICRoM 2022."
+image: /assets/images/thumbs/soft-magnetic-tactile-sensor.jpg
+description: "Designed and fabricated a Hall-effect-based soft tactile sensor, from dome deformation analysis and 3D-printed prototyping to Arduino-based data acquisition."
+outcome_label: "Prototype"
+outcome: "Fabricated a Hall-effect-based tactile sensor and implemented a multi-layer perceptron that predicts applied force from Hall-effect signals."
 meta:
   - label: "Role"
     value: "Researcher"
@@ -59,11 +59,16 @@ meta:
 </figure>
 </div>
 
-<p class="project__skills"><strong>Skills:</strong> C/C++, Electromechanical design, Embedded system, MLP, Mechanical analysis</p>
-
-<p class="project__detail"><strong>Highlights:</strong> 4th best paper finalists at
-  <a href="https://icrom.ir/" target="_blank" rel="noopener noreferrer">ICRoM 2022</a>.
-</p>
+<div class="project__skills">
+  <p class="project__skills-label">Skills</p>
+  <ul class="skill-tags">
+    <li>C/C++</li>
+    <li>Electromechanical design</li>
+    <li>Embedded system</li>
+    <li>MLP</li>
+    <li>Mechanical analysis</li>
+  </ul>
+</div>
 
 <p class="project__links">
   <a href="https://doi.org/10.1109/ICRoM57054.2022.10025333" target="_blank" rel="noopener" class="text-link">Project PDF</a>

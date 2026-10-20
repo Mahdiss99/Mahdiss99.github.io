@@ -20,6 +20,9 @@ layout: default
 
   <div class="case__layout">
     <aside class="case__aside" aria-label="Position details">
+      {%- if page.logo %}
+      <p class="org-logo org-logo--aside"><img src="{{ page.logo | relative_url }}" alt="{{ page.logo_alt }} logo" width="{{ page.logo_width }}" height="{{ page.logo_height }}"></p>
+      {%- endif %}
       <dl class="case__meta">
         {%- if page.lab %}
         <div><dt>Lab</dt><dd>{{ page.lab }}</dd></div>
@@ -33,6 +36,13 @@ layout: default
       <div class="case__body">
         {{ content }}
       </div>
+
+      {%- if page.related_projects and page.related_projects.size > 0 %}
+      <section class="related-projects" aria-labelledby="related-projects-heading">
+        <h2 class="related-pub__heading" id="related-projects-heading">Related Projects</h2>
+        {% include related-projects.html slugs=page.related_projects limit=page.related_projects.size %}
+      </section>
+      {%- endif %}
     </div>
   </div>
 

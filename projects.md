@@ -3,6 +3,7 @@ layout: page
 title: "Projects"
 permalink: /projects/
 toc_data: project_categories
+description: "Research and engineering projects by Mahdis Rabbani in autonomous systems and planning, control and estimation, and embedded mechatronics, each with a short summary of the work and its outcome."
 ---
 {%- comment -%}
   Generated from the _projects collection, grouped by _data/project_categories.yml.

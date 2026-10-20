@@ -4,8 +4,8 @@ category: autonomous-systems-planning
 order: 3
 date_label: "2024"
 placeholder: "Path Planning · Neural Networks"
-takeaway: "Studied learning-based path planning by reproducing Neural A* and U-Net–based planners and analyzing encoder–decoder variants."
-outcome_label: "Work completed"
+description: "Studied learning-based path planning by reproducing Neural A* and U-Net–based planners and analyzing encoder–decoder variants."
+outcome_label: "Benchmark"
 outcome: "Reproduced key published results and benchmarked the architectures in PyTorch; proposed modifications for dynamic and multi-agent navigation."
 meta:
   - label: "Role"
@@ -21,7 +21,15 @@ meta:
   <li>Analyzed encoder–decoder variants (VGG-16, ResNet-50) and proposed modifications for dynamic and multi-agent navigation.</li>
 </ul>
 
-<p class="project__skills"><strong>Skills:</strong> PyTorch, Deep Learning, Path Planning, Neural Networks</p>
+<div class="project__skills">
+  <p class="project__skills-label">Skills</p>
+  <ul class="skill-tags">
+    <li>PyTorch</li>
+    <li>Deep Learning</li>
+    <li>Path Planning</li>
+    <li>Neural Networks</li>
+  </ul>
+</div>
 
 <p class="project__links">
   <a href="/assets/pdfs/neural%20Astar.pdf" target="_blank" rel="noopener" class="text-link">Project PDF</a>

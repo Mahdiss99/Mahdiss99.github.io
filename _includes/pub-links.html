@@ -1,0 +1,18 @@
+{%- comment -%}
+  Project links (and recognition) for one publication entry, from _data/research_links.yml.
+  Params: anchor (the publication's id), part ("recognition" or "projects").
+{%- endcomment -%}
+{%- assign link = site.data.research_links | where: "anchor", include.anchor | first -%}
+{%- if link -%}
+  {%- if include.part == "recognition" -%}
+    {% include recognition.html link=link %}
+  {%- else -%}
+    {%- for item in link.projects -%}
+      {%- capture project_url -%}/projects/{{ item.slug }}/{%- endcapture -%}
+      {%- assign project = site.projects | where: "url", project_url | first -%}
+      {%- if project %}
+<a class="button-outline{% if item.supporting %} button-outline--quiet{% endif %}" href="{{ project.url | relative_url }}" title="{{ project.title }}" aria-label="{% if item.supporting %}Related project{% else %}View project{% endif %}: {{ project.title }}">{% if item.supporting %}Related Project{% else %}View Project{% endif %} <span aria-hidden="true">→</span></a>
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endif -%}

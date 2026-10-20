@@ -19,16 +19,35 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Mahdis Rabbani
+# Used by jekyll-seo-tag for the homepage <title>: "Mahdis Rabbani | <tagline>"
+tagline: Ph.D. Candidate in Robotics & Control at UC Davis
 email: mrabbani@ucdavis.edu
-description: Mechanical Engineering Ph.D. Candidate and Research Assistant at UC Davis.
+description: >-
+  Mahdis Rabbani is a Mechanical Engineering Ph.D. candidate at UC Davis
+  researching interaction-aware motion planning, game-theoretic control,
+  and autonomous systems.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://Mahdiss99.github.io
+url: https://mahdiss99.github.io   # canonical, lowercase, HTTPS
+lang: en
+locale: en_US
 
+# Author / Person data (jekyll-seo-tag author meta + Person JSON-LD in _includes/head.html)
+author:
+  name: Mahdis Rabbani
+  url: https://mahdiss99.github.io/
+  job_title: Ph.D. Candidate in Mechanical Engineering
+  affiliation: University of California, Davis
+  affiliation_url: https://www.ucdavis.edu/
+  same_as:
+    - https://www.linkedin.com/in/mahdis-rabbani
+    - https://scholar.google.com/citations?user=0O-aLs8AAAAJ
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -61,16 +80,31 @@ collections:
     permalink: /experience/:name/
 
 defaults:
+  # Social-preview image for every page; projects override it with their own `image`.
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/profile.jpg
   - scope:
       path: ""
       type: projects
     values:
       layout: project
+      seo:
+        type: WebPage
+  # The starter "Welcome to Jekyll" post is not part of the portfolio.
+  - scope:
+      path: ""
+      type: posts
+    values:
+      sitemap: false
   - scope:
       path: ""
       type: experiences
     values:
       layout: experience
+      seo:
+        type: WebPage
 
 header_pages:
   - projects.md   # Projects page will appear first

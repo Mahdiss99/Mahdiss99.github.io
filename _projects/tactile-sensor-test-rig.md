@@ -3,9 +3,9 @@ title: "Test Rig Design for Tactile Sensor"
 category: embedded-mechatronics
 order: 9
 date_label: "Feb. 2022 – Sep. 2022"
-thumb: /assets/images/thumbs/tactile-sensor-test-rig.jpg
-takeaway: "Designed a test bed that applies normal and tangential forces to the tactile sensor using two cylindrical linear voice-coil actuators."
-outcome_label: "Deliverable"
+image: /assets/images/thumbs/tactile-sensor-test-rig.jpg
+description: "Designed a test bed that applies normal and tangential forces to the tactile sensor using two cylindrical linear voice-coil actuators."
+outcome_label: "Prototype"
 outcome: "Built the test bed, with signal-conditioning circuitry designed and simulated in Altium and PID control of both voice coils on an STM32."
 meta:
   - label: "Role"
@@ -37,4 +37,13 @@ meta:
   <figcaption aria-hidden="true">Tactile sensor test</figcaption>
 </figure>
 
-<p class="project__skills"><strong>Skills:</strong> C/C++, Altium, Electromechanical Design, Embedded System, Filtering</p>
+<div class="project__skills">
+  <p class="project__skills-label">Skills</p>
+  <ul class="skill-tags">
+    <li>C/C++</li>
+    <li>Altium</li>
+    <li>Electromechanical Design</li>
+    <li>Embedded System</li>
+    <li>Filtering</li>
+  </ul>
+</div>

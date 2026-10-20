@@ -4,9 +4,9 @@ category: autonomous-systems-planning
 order: 1
 featured: 1
 date_label: "Fall 2025"
-thumb: /assets/images/thumbs/minimum-lap-time-autonomous-racing.jpg
-takeaway: "Developed reactive control and explored LiDAR, IMU, and wheel-encoder state estimation (EKF, SLAM, and an MLP estimator) for an autonomous racing stack in the AutoDRIVE simulator."
-outcome_label: "Result"
+image: /assets/images/thumbs/minimum-lap-time-autonomous-racing.jpg
+description: "Developed reactive control and explored LiDAR, IMU, and wheel-encoder state estimation (EKF, SLAM, and an MLP estimator) for an autonomous racing stack in the AutoDRIVE simulator."
+outcome_label: "Key Result"
 outcome: "In simulation, the LiDAR-based reactive controller completed 10 consecutive collision-free laps on the Qualification Track; the team qualified in the AutoDRIVE RoboRacer Sim Racing qualification round."
 meta:
   - label: "Role"
@@ -93,10 +93,19 @@ meta:
   </a>
 </p>
 
-<p class="project__skills">
-  <strong>Skills:</strong>
-  LiDAR, Reactive Control, Path Planning, PID Control, EKF, Sensor Fusion,
-  SLAM, Deep Learning, Docker
-</p>
+<div class="project__skills">
+  <p class="project__skills-label">Skills</p>
+  <ul class="skill-tags">
+    <li>LiDAR</li>
+    <li>Reactive Control</li>
+    <li>Path Planning</li>
+    <li>PID Control</li>
+    <li>EKF</li>
+    <li>Sensor Fusion</li>
+    <li>SLAM</li>
+    <li>Deep Learning</li>
+    <li>Docker</li>
+  </ul>
+</div>
 
 <p class="project__note"> <em>Note:</em> Team qualified in the qualification round of <a href="https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-cdc-tf-2025/" target="_blank" rel="noopener noreferrer"> AutoDRIVE RoboRacer Sim Racing (CDC-TF 2025)</a>. </p>

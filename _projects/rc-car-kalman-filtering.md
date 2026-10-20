@@ -3,9 +3,9 @@ title: "Position and Orientation Estimation of an RC Car Using Kalman Filtering"
 category: control-dynamics-estimation
 order: 7
 date_label: "Spring 2023"
-thumb: /assets/images/thumbs/rc-car-kalman-filtering.jpg
-takeaway: "Modeled and simulated RC-car dynamics in MATLAB to estimate vehicle position and orientation."
-outcome_label: "Work completed"
+image: /assets/images/thumbs/rc-car-kalman-filtering.jpg
+description: "Modeled and simulated RC-car dynamics in MATLAB to estimate vehicle position and orientation."
+outcome_label: "Implementation"
 outcome: "Designed Kalman and extended Kalman filters for the simulated vehicle, with estimation-error and state-comparison plots."
 meta:
   - label: "Role"
@@ -32,7 +32,13 @@ meta:
 </figure>
 </div>
 
-<p class="project__skills"><strong>Skills:</strong> MATLAB, Kalman Filter</p>
+<div class="project__skills">
+  <p class="project__skills-label">Skills</p>
+  <ul class="skill-tags">
+    <li>MATLAB</li>
+    <li>Kalman Filter</li>
+  </ul>
+</div>
 
 <p class="project__links">
   <a href="/assets/pdfs/Estimation.pdf" target="_blank" rel="noopener" class="text-link">Project PDF</a>

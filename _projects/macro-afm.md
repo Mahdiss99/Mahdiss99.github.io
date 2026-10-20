@@ -3,10 +3,10 @@ title: "Macro-Atomic Force Microscopy"
 category: embedded-mechatronics
 order: 11
 date_label: "Summer 2021"
-thumb: /assets/images/thumbs/macro-afm.jpg
-takeaway: "Modeled the mechanical and magnetic behavior of a macro-scale atomic force microscopy probe."
-outcome_label: "Work completed"
-outcome: "Analyzed the probe in ANSYS and studied its frequency response and feedback."
+image: /assets/images/thumbs/macro-afm.jpg
+description: "Internship project on modeling a macro-scale atomic force microscopy (macro-AFM) probe."
+outcome_label: "Analysis"
+outcome: "Modeled and analyzed the probe (mechanical + magnetic) in ANSYS and studied its frequency response and feedback."
 meta:
   - label: "Role"
     value: "Intern"
@@ -29,7 +29,15 @@ meta:
   <li>Study of frequency response and feedback.</li>
 </ul>
 
-<p class="project__skills"><strong>Skills:</strong> SOLIDWORKS, Ansys, COMSOL, Frequency analysis</p>
+<div class="project__skills">
+  <p class="project__skills-label">Skills</p>
+  <ul class="skill-tags">
+    <li>SOLIDWORKS</li>
+    <li>Ansys</li>
+    <li>COMSOL</li>
+    <li>Frequency analysis</li>
+  </ul>
+</div>
 
 <p class="project__links">
   <a href="/assets/pdfs/Internship.pdf" target="_blank" rel="noopener" class="text-link">Project PDF</a>

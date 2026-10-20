@@ -4,9 +4,9 @@ category: autonomous-systems-planning
 order: 2
 featured: 3
 date_label: "Spring 2025"
-thumb: /assets/images/thumbs/multi-step-deep-koopman.jpg
-takeaway: "Embedded a Python deep-Koopman vehicle model in MATLAB/Simulink for trajectory-tracking MPC of a high-fidelity CarSim vehicle."
-outcome_label: "Deliverable"
+image: /assets/images/thumbs/multi-step-deep-koopman.jpg
+description: "Embedded a Python deep-Koopman vehicle model in MATLAB/Simulink for trajectory-tracking MPC of a high-fidelity CarSim vehicle."
+outcome_label: "Implementation"
 outcome: "Cross-language Python–Simulink MPC integration with the CarSim-modeled vehicle; the work was presented at IROS 2025."
 meta:
   - label: "Role"
@@ -37,4 +37,13 @@ meta:
   <li>Presented at IROS 2025.</li>
 </ul>
 
-<p class="project__skills"><strong>Skills:</strong> Python, MATLAB/Simulink, MPC Design, Koopman Operator, Deep learning-based system identification</p>
+<div class="project__skills">
+  <p class="project__skills-label">Skills</p>
+  <ul class="skill-tags">
+    <li>Python</li>
+    <li>MATLAB/Simulink</li>
+    <li>MPC Design</li>
+    <li>Koopman Operator</li>
+    <li>Deep learning-based system identification</li>
+  </ul>
+</div>

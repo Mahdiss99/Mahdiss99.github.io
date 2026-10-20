@@ -1,5 +1,5 @@
 ---
-title: "University of California, Davis"
+title: "Graduate Student Researcher, CORE Lab, UC Davis"
 organization: "University of California, Davis"
 lab: "Control, Optimization, Robotics, and Electrification (CORE) Lab"
 lab_short: "CORE Lab"
@@ -8,6 +8,21 @@ position_short: "Graduate Student Researcher"
 location: "Davis, California"
 period: "September 2022 – Present"
 order: 1
+description: "Graduate Student Researcher in the CORE Lab at the University of California, Davis (September 2022 – Present), developing interaction-aware trajectory-planning and decision-making methods for autonomous driving and racing."
+logo: /assets/images/logos/ucdavis-wordmark.png
+logo_alt: "UC Davis"
+logo_width: 128
+logo_height: 22
+logo_small_width: 100
+logo_small_height: 17
+# Related projects (slugs in _projects/), shown on /experience/ and on this page.
+related_projects:
+  - minimum-lap-time-autonomous-racing
+  - optimal-modified-feedback-lq-games
+  - multi-step-deep-koopman
+  - ground-vehicle-collision-avoidance
+  - trajectory-prediction-team
+  - f1tenth-racing-platform
 ---
 
 <ul>

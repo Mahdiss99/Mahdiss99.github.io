@@ -1,13 +1,13 @@
 ---
 layout: page
-title: "Publication"
-heading: "Publications"
+title: "Publications"
 permalink: /publication/
 toc:
   - id: published
     title: Conference & Journal Papers
   - id: preprints
     title: Preprints & Submitted Manuscripts
+description: "Publications and preprints by Mahdis Rabbani on game-theoretic control, LQ games, Koopman-based vehicle control, and soft magnetic tactile sensing."
 ---
 <div class="publications">
 <p class="page-intro">
@@ -25,16 +25,20 @@ Google Scholar profile</a>.
           <h3 class="pub__title">Optimal Modified Feedback Strategies in LQ Games Under Control Imperfections </h3>
           <p class="pub__authors"><strong>Mahdis Rabbani</strong>, Navid Mojahed, and Shima Nazari</p>
           <p class="pub__venue">2026 American Control Conference (ACC), pp. 777–784</p>
-          <p class="pub__links"><a href="https://doi.org/10.48550/arXiv.2503.19200" target="_blank" rel="noopener noreferrer" class="text-link">PDF</a></p>
+          <p class="pub__links"><a href="https://doi.org/10.48550/arXiv.2503.19200" target="_blank" rel="noopener noreferrer" class="text-link">PDF</a>
+            {% include pub-links.html anchor="lq-game-control-imperfections" part="projects" %}
+          </p>
         </div>
       </li>
-      <li class="pub">
+      <li class="pub" id="mdk-net-iros-2025">
         <span class="pub__year">2025</span>
         <div class="pub__body">
           <h3 class="pub__title">Multi-Step Deep Koopman Network (MDK-Net) for Vehicle Control in Frenet Frame</h3>
           <p class="pub__authors">Mohammad Abtahi, <strong>Mahdis Rabbani</strong>, Armin Abdolmohammadi, and Shima Nazari</p>
           <p class="pub__venue">2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
-          <p class="pub__links"><a href="https://doi.org/10.1109/IROS60139.2025.11246508" target="_blank" rel="noopener noreferrer" class="text-link">PDF</a></p>
+          <p class="pub__links"><a href="https://doi.org/10.1109/IROS60139.2025.11246508" target="_blank" rel="noopener noreferrer" class="text-link">PDF</a>
+            {% include pub-links.html anchor="mdk-net-iros-2025" part="projects" %}
+          </p>
         </div>
       </li>
       <li class="pub">
@@ -55,13 +59,16 @@ Google Scholar profile</a>.
           <p class="pub__links"><a href="https://www.sciencedirect.com/science/article/pii/S2405896323023686" target="_blank" rel="noopener noreferrer" class="text-link">PDF</a></p>
         </div>
       </li>
-      <li class="pub">
+      <li class="pub" id="soft-magnetic-tactile-sensor-icrom-2022">
         <span class="pub__year">2022</span>
         <div class="pub__body">
           <h3 class="pub__title">Design and Fabrication of a Soft Magnetic Tactile Sensor</h3>
           <p class="pub__authors"><strong>Mahdis Rabbani</strong>, Mohammad Amin Mirzaee, Mahdi Robati, and Ali Sadighi</p>
           <p class="pub__venue">2022 10th RSI International Conference on Robotics and Mechatronics (ICRoM), IEEE (2022)</p>
-          <p class="pub__links"><a href="https://doi.org/10.1109/ICRoM57054.2022.10025333" target="_blank" rel="noopener noreferrer" class="text-link">PDF</a></p>
+          <p class="pub__recognition">{% include pub-links.html anchor="soft-magnetic-tactile-sensor-icrom-2022" part="recognition" %}</p>
+          <p class="pub__links"><a href="https://doi.org/10.1109/ICRoM57054.2022.10025333" target="_blank" rel="noopener noreferrer" class="text-link">PDF</a>
+            {% include pub-links.html anchor="soft-magnetic-tactile-sensor-icrom-2022" part="projects" %}
+          </p>
         </div>
       </li>
       <li class="pub">

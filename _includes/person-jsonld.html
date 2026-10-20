@@ -1,0 +1,20 @@
+{%- comment -%}
+  schema.org Person (homepage and About only). Values come from `author` in _config.yml.
+{%- endcomment -%}
+{%- assign a = site.author -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ a.name | jsonify }},
+  "url": {{ a.url | jsonify }},
+  "image": {{ '/assets/images/profile.jpg' | absolute_url | jsonify }},
+  "jobTitle": {{ a.job_title | jsonify }},
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": {{ a.affiliation | jsonify }},
+    "url": {{ a.affiliation_url | jsonify }}
+  },
+  "sameAs": {{ a.same_as | jsonify }}
+}
+</script>

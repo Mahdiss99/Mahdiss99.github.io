@@ -69,7 +69,8 @@ layout: default
       {%- assign experiences = site.experiences | sort: "order" -%}
       {%- for e in experiences %}
       <li class="row">
-        <a class="row__link" href="{{ e.url | relative_url }}">
+        <a class="row__link row__link--logo" href="{{ e.url | relative_url }}">
+          <span class="org-logo org-logo--sm" aria-hidden="true"><img src="{{ e.logo | relative_url }}" alt="" width="{{ e.logo_small_width }}" height="{{ e.logo_small_height }}" loading="lazy" decoding="async"></span>
           <span class="row__main">
             <span class="row__title">{{ e.position_short }}</span>
             <span class="row__sub">{{ e.organization }}{% if e.lab_short %} — {{ e.lab_short }}{% endif %}</span>

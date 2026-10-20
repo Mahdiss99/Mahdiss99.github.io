@@ -1,0 +1,11 @@
+{%- comment -%}
+  Removes the first `start ... end` span from `text`; result is assigned to `stripped`.
+{%- endcomment -%}
+{%- assign _parts = include.text | split: include.start -%}
+{%- if _parts.size > 1 -%}
+  {%- assign _tail = _parts[1] | split: include.end -%}
+  {%- assign _after = _tail | shift | join: include.end -%}
+  {%- assign stripped = _parts[0] | append: _after -%}
+{%- else -%}
+  {%- assign stripped = include.text -%}
+{%- endif -%}

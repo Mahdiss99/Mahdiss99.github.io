@@ -1,0 +1,25 @@
+{%- comment -%}
+  Compact project cards built from the _projects collection.
+  Params: slugs (list of _projects/<slug>), limit (max cards).
+  Title, thumbnail and URL always come from the project document itself.
+{%- endcomment -%}
+<ul class="mini-cards">
+  {%- for slug in include.slugs limit: include.limit -%}
+    {%- capture project_url -%}/projects/{{ slug }}/{%- endcapture -%}
+    {%- assign p = site.projects | where: "url", project_url | first -%}
+    {%- if p %}
+  <li>
+    <a class="mini-card" href="{{ p.url | relative_url }}">
+      <span class="mini-card__thumb" aria-hidden="true">
+        {%- if p.placeholder -%}
+        <span class="mini-card__placeholder"></span>
+        {%- else -%}
+        <img src="{{ p.image | relative_url }}" alt="" width="960" height="640" loading="lazy" decoding="async">
+        {%- endif -%}
+      </span>
+      <span class="mini-card__title">{{ p.title }}</span>
+    </a>
+  </li>
+    {%- endif -%}
+  {%- endfor %}
+</ul>

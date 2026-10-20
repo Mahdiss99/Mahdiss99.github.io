@@ -13,6 +13,7 @@ toc:
     title: Relevant Coursework
   - id: more
     title: Skills & Teaching
+description: "Research background, education, honors, and coursework of Mahdis Rabbani, Ph.D. candidate in Mechanical Engineering (Robotics & Control) at UC Davis."
 ---
 <div class="about">
 
@@ -25,7 +26,7 @@ toc:
       with a primary focus on autonomous driving and racing.
       </p>
       <p>
-      My research developsreal-time game-theoretic control methods that enable autonomous agents to
+      My research develops real-time game-theoretic control methods that enable autonomous agents to
       explicitly reason about how surrounding agents will react to their actions.
       Specifically, I am developing a computationally efficient methodology to approximate
       Nash equilibrium solutions and embed it within a
