@@ -71,6 +71,18 @@ plugins:
 # Collections: one document per project / position.
 #   _projects/<slug>.md    -> /projects/<slug>/   (listed on /projects/, featured ones on /)
 #   _experiences/<slug>.md -> /experience/<slug>/ (listed on /experience/ and /)
+#
+# Rule: one project = one authoritative set of metadata and media; many presentation components.
+#   A project's front matter is the only place its shared facts live; every component reads it:
+#     title, category, order, featured, date_label   identity and placement
+#     description, outcome_label, outcome            takeaway + result (homepage, /projects/, page lead, SEO)
+#     image                                          static thumbnail / social-preview image
+#     preview_video, preview_poster                  optional 3:2 looping cover (thumbnails everywhere)
+#     cover_video, cover_poster, cover_width/height, optional large cover on the project page,
+#       cover_caption                                  placed in the body with {% include case-cover.html %}
+#     meta                                           side-panel details on the project page
+#   Publications are linked to projects in _data/research_links.yml; experiences list related
+#   projects by slug (related_projects). Components may change size and layout, never the facts.
 collections:
   projects:
     output: true

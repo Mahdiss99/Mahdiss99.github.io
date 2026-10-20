@@ -1,0 +1,15 @@
+{%- comment -%}
+  Large cover video for a project's case-study page, placed in the project's body with
+  {% include case-cover.html %}. Reads cover_video / cover_poster / cover_caption from the
+  current project's front matter (same player and controls as every other preview).
+{%- endcomment -%}
+{%- if page.cover_video -%}
+<figure class="figure case-cover">
+  <div class="case-cover__media" data-preview>
+    {% include preview-video.html project=page variant="cover" %}
+  </div>
+  {%- if page.cover_caption %}
+  <figcaption>{{ page.cover_caption }}</figcaption>
+  {%- endif %}
+</figure>
+{%- endif -%}

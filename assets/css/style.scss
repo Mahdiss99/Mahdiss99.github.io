@@ -1369,6 +1369,161 @@ strong { font-weight: 600; }
   .figure--half img { max-height: 420px; }
 }
 
+/* Case-study building blocks (used by projects whose body opts into them) */
+.case__body > .case-heading {
+  margin-top: 40px;
+  font-size: var(--fs-entry);
+}
+
+.case__body > .case-heading:first-child { margin-top: 0; }
+
+/* Large cover video (case-cover include): natural aspect ratio, never cropped */
+.case-cover { max-width: 34rem; }
+
+.case-cover__media {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.figure .case-cover__media .preview-video {
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+/* Headline numbers: restrained, navy accent rule */
+.metrics {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px 32px;
+  max-width: var(--measure);
+}
+
+@media (min-width: 480px) {
+  .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.metric {
+  padding: 2px 0 2px 16px;
+  border-left: 3px solid var(--navy);
+}
+
+.metric__value {
+  font-size: clamp(1.75rem, calc(1.4rem + 1vw), 2.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+  font-variant-numeric: tabular-nums;
+}
+
+.case__body .metric__label {
+  margin-top: 4px;
+  font-size: 0.96875rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.case__body .metric-note,
+.case__body .equation-note {
+  font-size: var(--fs-meta);
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.case__body .contributions { padding-left: 1.4em; }
+
+.case__body .contributions > li + li { margin-top: 14px; }
+
+.contributions > li::marker { font-weight: 700; color: var(--navy-2); }
+
+.contributions p + p { margin-top: 10px; }
+
+.equation {
+  overflow-x: auto;
+  padding: 12px 16px;
+  font-family: "Cambria Math", Cambria, "Times New Roman", serif;
+  font-size: 1.1875rem;
+  color: var(--navy);
+  background: var(--surface);
+  border-left: 3px solid var(--navy-2);
+  border-radius: 0 4px 4px 0;
+}
+
+.case-defs {
+  display: grid;
+  gap: 8px;
+  max-width: var(--measure);
+}
+
+.case-defs > div {
+  display: grid;
+  grid-template-columns: 3.25rem minmax(0, 1fr);
+  gap: 12px;
+  align-items: baseline;
+}
+
+.case-defs dt {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--navy);
+}
+
+.case-defs dd { margin: 0; line-height: 1.6; }
+
+/* Results table: scrolls inside its own box on narrow screens */
+.table-wrap {
+  max-width: var(--measure);
+  overflow-x: auto;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.96875rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.results-table caption {
+  padding-bottom: 8px;
+  font-size: var(--fs-meta);
+  text-align: left;
+  color: var(--muted);
+}
+
+.results-table th,
+.results-table td {
+  padding: 10px 14px;
+  text-align: right;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border);
+}
+
+.results-table thead th {
+  font-weight: 600;
+  color: var(--navy);
+  border-bottom: 2px solid var(--navy);
+}
+
+.results-table th:first-child {
+  padding-left: 0;
+  text-align: left;
+  white-space: normal;
+}
+
+.results-table tbody th { font-weight: 500; }
+
+@media (max-width: 420px) {
+  .results-table { font-size: 0.875rem; }
+  .results-table th,
+  .results-table td { padding: 8px 6px; }
+}
+
 /* Previous / next */
 .case__pager {
   display: grid;
