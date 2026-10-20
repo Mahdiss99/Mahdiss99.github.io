@@ -25,7 +25,7 @@ Google Scholar profile</a>.
           <h3 class="pub__title">Optimal Modified Feedback Strategies in LQ Games Under Control Imperfections </h3>
           <p class="pub__authors"><strong>Mahdis Rabbani</strong>, Navid Mojahed, and Shima Nazari</p>
           <p class="pub__venue">2026 American Control Conference (ACC), pp. 777–784</p>
-          <p class="pub__links"><a href="https://doi.org/10.48550/arXiv.2503.19200" target="_blank" rel="noopener noreferrer" class="text-link">PDF</a>
+          <p class="pub__links"><a href="https://ieeexplore.ieee.org/document/11615373" target="_blank" rel="noopener noreferrer" class="text-link">PDF</a>
             {% include pub-links.html anchor="lq-game-control-imperfections" part="projects" %}
           </p>
         </div>

@@ -18,7 +18,7 @@
 - anchor: lq-game-control-imperfections
   title: Optimal Modified Feedback Strategies in LQ Games Under Control Imperfections
   citation: ACC 2026
-  paper_url: https://doi.org/10.48550/arXiv.2503.19200
+  paper_url: https://ieeexplore.ieee.org/document/11615373
   projects:
     - slug: optimal-modified-feedback-lq-games
 
