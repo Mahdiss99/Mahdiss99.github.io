@@ -19,7 +19,7 @@ description: "Research and engineering projects by Mahdis Rabbani in autonomous 
 <div class="work-list">
 {%- assign items = projects | where: "category", category.id -%}
 {%- for project in items %}
-{% include project-entry.html project=project light=category.light %}
+{% include project-entry.html project=project light=category.light video=true %}
 {%- endfor %}
 </div>
 </section>

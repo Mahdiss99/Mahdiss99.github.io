@@ -1,0 +1,14 @@
+{%- comment -%}
+  Muted looping cover preview + its pause/play button, for a project with preview_video/preview_poster.
+  The source is attached by assets/js/preview-video.js when motion is allowed; otherwise, and
+  without JavaScript, the poster is shown. Param: project, small (bool: compact button).
+  Must sit inside an element marked data-preview, outside any link.
+{%- endcomment -%}
+{%- assign pv = include.project -%}
+<video class="preview-video" autoplay muted loop playsinline preload="none" disablepictureinpicture
+  poster="{{ pv.preview_poster | relative_url }}" data-preview-src="{{ pv.preview_video | relative_url }}"
+  width="576" height="384" aria-hidden="true" tabindex="-1"></video>
+<button class="preview-toggle{% if include.small %} preview-toggle--sm{% endif %}" type="button" data-state="paused" data-title="{{ pv.title | escape }}" aria-label="Play preview video: {{ pv.title | escape }}" hidden>
+  <svg class="preview-toggle__pause" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4 2h3v12H4zM9 2h3v12H9z"/></svg>
+  <svg class="preview-toggle__play" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4 2.5v11l9.5-5.5z"/></svg>
+</button>

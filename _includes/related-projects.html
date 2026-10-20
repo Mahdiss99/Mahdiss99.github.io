@@ -1,24 +1,30 @@
 {%- comment -%}
   Compact project cards built from the _projects collection.
   Params: slugs (list of _projects/<slug>), limit (max cards).
-  Title, thumbnail and URL always come from the project document itself.
+  Title, thumbnail and URL always come from the project document itself; projects with a
+  preview_video show the muted preview as their cover. The title link covers the whole card,
+  so the preview's pause/play button can sit outside it (no nested interactive elements).
 {%- endcomment -%}
 <ul class="mini-cards">
   {%- for slug in include.slugs limit: include.limit -%}
     {%- capture project_url -%}/projects/{{ slug }}/{%- endcapture -%}
     {%- assign p = site.projects | where: "url", project_url | first -%}
     {%- if p %}
-  <li>
-    <a class="mini-card" href="{{ p.url | relative_url }}">
-      <span class="mini-card__thumb" aria-hidden="true">
-        {%- if p.placeholder -%}
-        <span class="mini-card__placeholder"></span>
-        {%- else -%}
-        <img src="{{ p.image | relative_url }}" alt="" width="960" height="640" loading="lazy" decoding="async">
-        {%- endif -%}
-      </span>
-      <span class="mini-card__title">{{ p.title }}</span>
-    </a>
+  <li class="mini-card">
+    {%- if p.preview_video %}
+    <span class="mini-card__thumb mini-card__thumb--video" data-preview>
+      {% include preview-video.html project=p small=true %}
+    </span>
+    {%- else %}
+    <span class="mini-card__thumb" aria-hidden="true">
+      {%- if p.placeholder -%}
+      <span class="mini-card__placeholder"></span>
+      {%- else -%}
+      <img src="{{ p.image | relative_url }}" alt="" width="960" height="640" loading="lazy" decoding="async">
+      {%- endif -%}
+    </span>
+    {%- endif %}
+    <a class="mini-card__title" href="{{ p.url | relative_url }}">{{ p.title }}</a>
   </li>
     {%- endif -%}
   {%- endfor %}

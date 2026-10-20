@@ -107,5 +107,3 @@ layout: default
     </ul>
   </section>
 </div>
-
-<script src="{{ '/assets/js/preview-video.js' | relative_url }}" defer></script>

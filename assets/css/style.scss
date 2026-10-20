@@ -925,6 +925,7 @@ strong { font-weight: 600; }
 }
 
 .mini-card {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -934,12 +935,13 @@ strong { font-weight: 600; }
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  text-decoration: none;
 }
 
-.mini-card:hover { color: var(--navy); border-color: #B6C6D8; }
+.mini-card:hover { border-color: #B6C6D8; }
 
 .mini-card:hover .mini-card__title { text-decoration: underline; text-underline-offset: 0.18em; }
+
+.mini-card:focus-within { outline: 2px solid var(--navy-2); outline-offset: 3px; }
 
 .mini-card__thumb {
   flex: none;
@@ -964,7 +966,18 @@ strong { font-weight: 600; }
   font-size: 0.9375rem;
   font-weight: 600;
   line-height: 1.35;
+  color: var(--navy);
+  text-decoration: none;
 }
+
+/* The title link covers the whole card */
+.mini-card__title::after { content: ""; position: absolute; inset: 0; }
+
+.mini-card__title:hover { color: var(--navy); }
+
+.mini-card__title:focus-visible { outline: none; }
+
+.mini-card__thumb--video { position: relative; }
 
 
 /* 8. Projects: index entries + case-study pages ========================== */
@@ -1059,6 +1072,16 @@ strong { font-weight: 600; }
 }
 
 .preview-toggle[hidden] { display: none; }
+
+/* Compact control for the small related-project covers */
+.preview-toggle--sm {
+  right: 3px;
+  bottom: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.preview-toggle--sm svg { width: 9px; height: 9px; }
 
 .preview-toggle:hover { background: var(--navy); }
 

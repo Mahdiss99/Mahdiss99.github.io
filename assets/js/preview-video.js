@@ -1,5 +1,6 @@
 /*
-  Homepage Selected Work: muted looping video previews.
+  Muted looping cover previews (homepage, Projects index, Experience related-project cards).
+  Each preview is a <video data-preview-src> plus a .preview-toggle button inside a [data-preview] element.
 
   - Videos start with no source (poster only). A source is attached only when playback is
     actually wanted, so nothing is downloaded on phones, with reduced motion, or with data saving.
@@ -25,7 +26,7 @@
   var previews = [];
 
   Array.prototype.forEach.call(videos, function (video) {
-    var button = video.parentNode.querySelector(".preview-toggle");
+    var button = video.closest("[data-preview]").querySelector(".preview-toggle");
     var preview = {
       video: video,
       button: button,

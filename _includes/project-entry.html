@@ -11,18 +11,8 @@
 <article class="work{% if include.light %} work--light{% endif %}">
   {%- unless include.light %}
   {%- if include.video and p.preview_video %}
-  {%- comment -%}
-    Muted looping preview (homepage only). The source is attached by assets/js/preview-video.js
-    when motion is allowed; otherwise, and without JavaScript, the poster is shown.
-  {%- endcomment %}
-  <div class="work__thumb work__thumb--video">
-    <video class="preview-video" autoplay muted loop playsinline preload="none" disablepictureinpicture
-      poster="{{ p.preview_poster | relative_url }}" data-preview-src="{{ p.preview_video | relative_url }}"
-      width="576" height="384" aria-hidden="true" tabindex="-1"></video>
-    <button class="preview-toggle" type="button" data-state="paused" data-title="{{ p.title | escape }}" aria-label="Play preview video: {{ p.title | escape }}" hidden>
-      <svg class="preview-toggle__pause" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4 2h3v12H4zM9 2h3v12H9z"/></svg>
-      <svg class="preview-toggle__play" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4 2.5v11l9.5-5.5z"/></svg>
-    </button>
+  <div class="work__thumb work__thumb--video" data-preview>
+    {% include preview-video.html project=p %}
   </div>
   {%- else %}
   <div class="work__thumb" aria-hidden="true">
