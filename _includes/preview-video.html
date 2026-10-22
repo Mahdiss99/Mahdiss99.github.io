@@ -8,6 +8,8 @@
     small    compact button (related-project cards)
     variant  "cover" uses the project's large cover_video / cover_poster (case-study page);
              default uses the 3:2 preview_video / preview_poster (thumbnails)
+  Optional project fields for thumbnails: preview_fit: contain shows a non-3:2 video whole
+  (no cropping); preview_background fills the remaining space (use the video's edge colour).
 {%- endcomment -%}
 {%- assign pv = include.project -%}
 {%- if include.variant == "cover" -%}
@@ -17,7 +19,8 @@
   {%- assign pv_src = pv.preview_video -%}{%- assign pv_poster = pv.preview_poster -%}
   {%- assign pv_w = 576 -%}{%- assign pv_h = 384 -%}
 {%- endif -%}
-<video class="preview-video" autoplay muted loop playsinline preload="none" disablepictureinpicture
+<video class="preview-video{% if include.variant != "cover" and pv.preview_fit == "contain" %} preview-video--contain{% endif %}" autoplay muted loop playsinline preload="none" disablepictureinpicture
+  {%- if include.variant != "cover" and pv.preview_background %} style="background-color: {{ pv.preview_background }}"{% endif %}
   poster="{{ pv_poster | relative_url }}" data-preview-src="{{ pv_src | relative_url }}"
   width="{{ pv_w }}" height="{{ pv_h }}" aria-hidden="true" tabindex="-1"></video>
 <button class="preview-toggle{% if include.small %} preview-toggle--sm{% endif %}" type="button" data-state="paused" data-title="{{ pv.title | escape }}" aria-label="Play preview video: {{ pv.title | escape }}" hidden>

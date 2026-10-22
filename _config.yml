@@ -78,6 +78,7 @@ plugins:
 #     description, outcome_label, outcome            takeaway + result (homepage, /projects/, page lead, SEO)
 #     image                                          static thumbnail / social-preview image
 #     preview_video, preview_poster                  optional 3:2 looping cover (thumbnails everywhere)
+#       preview_fit, preview_background                optional: "contain" shows a non-3:2 video uncropped
 #     cover_video, cover_poster, cover_width/height, optional large cover on the project page,
 #       cover_caption                                  placed in the body with {% include case-cover.html %}
 #     meta                                           side-panel details on the project page

@@ -7,6 +7,9 @@
   - Plays while at least a quarter of the preview is on screen and the tab is visible;
     pauses otherwise (IntersectionObserver + visibilitychange).
   - The pause/play button records a manual choice, which visibility changes never override.
+  - At most MAX_AUTOPLAY previews play on their own at once (the most visible ones), so a page
+    with several animated covers never decodes them all together. A preview the visitor
+    starts with its button is not counted against that limit.
 */
 (function () {
   "use strict";
@@ -23,6 +26,7 @@
     return !reducedMotion.matches && !smallOrTouch.matches && !reducedData.matches && !connection.saveData;
   }
 
+  var MAX_AUTOPLAY = 2;
   var previews = [];
 
   Array.prototype.forEach.call(videos, function (video) {
@@ -31,6 +35,8 @@
       video: video,
       button: button,
       visible: !("IntersectionObserver" in window),
+      ratio: 1,
+      userStarted: false,
       // A manual pause sticks; when motion is not allowed, start paused (poster) until the visitor presses play.
       userPaused: !motionAllowed()
     };
@@ -49,11 +55,14 @@
     button.addEventListener("click", function () {
       if (video.paused) {
         preview.userPaused = false;
+        preview.userStarted = true;
         play(preview);
       } else {
         preview.userPaused = true;
+        preview.userStarted = false;
         video.pause();
       }
+      syncAll();
     });
   });
 
@@ -69,10 +78,20 @@
     }
   }
 
-  function sync(preview) {
-    var shouldPlay = preview.visible && !document.hidden && !preview.userPaused;
-    if (shouldPlay && preview.video.paused) play(preview);
-    else if (!shouldPlay && !preview.video.paused) preview.video.pause();
+  // Decide which previews play: visible, tab shown, not paused by the visitor; previews the
+  // visitor started always play, the rest are limited to the MAX_AUTOPLAY most visible.
+  function syncAll() {
+    var wanted = previews.filter(function (p) { return p.visible && !document.hidden && !p.userPaused; });
+    var chosen = wanted.filter(function (p) { return p.userStarted; });
+    wanted.filter(function (p) { return !p.userStarted; })
+      .sort(function (a, b) { return b.ratio - a.ratio || previews.indexOf(a) - previews.indexOf(b); })
+      .slice(0, MAX_AUTOPLAY)
+      .forEach(function (p) { chosen.push(p); });
+    previews.forEach(function (p) {
+      var shouldPlay = chosen.indexOf(p) !== -1;
+      if (shouldPlay && p.video.paused) play(p);
+      else if (!shouldPlay && !p.video.paused) p.video.pause();
+    });
   }
 
   if ("IntersectionObserver" in window) {
@@ -80,23 +99,24 @@
       entries.forEach(function (entry) {
         previews.forEach(function (preview) {
           if (preview.video === entry.target) {
-            preview.visible = entry.isIntersecting;
-            sync(preview);
+            preview.ratio = entry.intersectionRatio;
+            preview.visible = entry.isIntersecting && entry.intersectionRatio >= 0.25;
           }
         });
       });
-    }, { threshold: 0.25 });
+      syncAll();
+    }, { threshold: [0, 0.25, 0.5, 0.75, 1] });
     previews.forEach(function (preview) { observer.observe(preview.video); });
   } else {
-    previews.forEach(sync);
+    syncAll();
   }
 
-  document.addEventListener("visibilitychange", function () { previews.forEach(sync); });
+  document.addEventListener("visibilitychange", syncAll);
 
   // If the visitor turns on reduced motion while the page is open, stop the previews.
   function onPreferenceChange() {
     if (!motionAllowed()) {
-      previews.forEach(function (preview) { preview.userPaused = true; preview.video.pause(); });
+      previews.forEach(function (preview) { preview.userPaused = true; preview.userStarted = false; preview.video.pause(); });
     }
   }
   [reducedMotion, smallOrTouch, reducedData].forEach(function (query) {

@@ -1053,6 +1053,9 @@ strong { font-weight: 600; }
   background: var(--surface);
 }
 
+/* A video that is not 3:2 is shown whole; its own edge colour (inline) fills the frame */
+.preview-video.preview-video--contain { object-fit: contain; }
+
 .preview-toggle {
   position: absolute;
   z-index: 2;              /* above the entry's full-card link */
@@ -1518,10 +1521,84 @@ strong { font-weight: 600; }
 
 .results-table tbody th { font-weight: 500; }
 
+/* Tables with text values (ranges, controller names) may wrap on phones */
+@media (max-width: 599px) {
+  .results-table--wrap th,
+  .results-table--wrap td { white-space: normal; }
+}
+
 @media (max-width: 420px) {
   .results-table { font-size: 0.875rem; }
   .results-table th,
   .results-table td { padding: 8px 6px; }
+}
+
+/* Full demonstration videos (16:9, native controls) */
+.figure--video video { max-height: none; }
+
+@media (min-width: 900px) {
+  .metrics--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: none; }
+}
+
+/* Multi-line equations: each line stays intact and scrolls inside the box if needed */
+.case__body .equation--block {
+  max-width: var(--measure);
+  font-size: 1.0625rem;
+  line-height: 2;
+  white-space: nowrap;
+}
+
+.equation__indent { display: inline-block; width: 2.5em; }
+
+/* Two-column controller comparison */
+.arch-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px 24px;
+}
+
+@media (min-width: 720px) {
+  .arch-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.arch {
+  padding: 16px 20px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--navy);
+  border-radius: 2px 2px var(--radius) var(--radius);
+}
+
+.arch__title { font-size: 1.0625rem; }
+
+.case__body .arch__tools {
+  margin-top: 2px;
+  font-size: var(--fs-meta);
+  font-weight: 600;
+  color: var(--navy-2);
+}
+
+.case__body .arch ul { margin-top: 10px; }
+
+.case__body .arch li { line-height: 1.6; }
+
+.case__body .arch li + li { margin-top: 6px; }
+
+.highlights strong { color: var(--navy); }
+
+/* Reproduction commands */
+.code-block {
+  max-width: var(--measure);
+  overflow-x: auto;
+  margin: 0;
+  padding: 14px 16px;
+  font-family: ui-monospace, "Cascadia Code", Consolas, "Courier New", monospace;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
 }
 
 /* Previous / next */
